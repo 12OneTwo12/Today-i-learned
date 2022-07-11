@@ -151,7 +151,7 @@
   <p> 말고 다른 문단 기능을 가진 태그도 있는지 찾아보았다.  
   <p> <div> <span> 이 있는데, 이들의 차이점이 뭘까?  
       
-    ![image url](https://github.com/12OneTwo12/TIL/blob/main/Html/laknfglaknglvaekrf.png?raw=true)  
+   ![image url](https://github.com/12OneTwo12/TIL/blob/main/Html/laknfglaknglvaekrf.png?raw=true)  
       
-    이렇다고 한다.  
-    줄을 어떻게 정리 하느냐의 차이인듯 싶다.   
+   이렇다고 한다.  
+   줄을 어떻게 정리 하느냐의 차이인듯 싶다.   
