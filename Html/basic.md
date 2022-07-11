@@ -180,10 +180,10 @@
    이제 나머지 기사를 채워보자.  
    여행지 이름을 작성하고 Lorem을 통해 적당히 내용을 채워보자.  
      
-    
+    ```
     Lorem ipsum : 의미 없는 dummy 텍스트를 작성하여 우선 화면의 구성과 느낌만 보고 싶을 때 주로 활용.
-      
-      
+    ```  
+        
 ``` html
 <!DOCTYPE html>      
 <html lang="en">     
@@ -211,3 +211,39 @@
 </html>
 ```  
       
+  나머지 내용은 채웠으니 이제 여행지 정보를 ul 태그를 통해 입력하려 한다.  
+      
+``` html
+<!DOCTYPE html>      
+<html lang="en">     
+<head>               
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneTwo News</title>        
+</head>
+  <body>
+     <h1>Best Places To Visit Post-Pandemic</h1>
+
+    <p>More people are being vaccinated everyday and travel is already top of mind.</p>
+    
+    <p>Suddenly, the whole world feels in reach again, even if travel restrictions haven’t quite been lifted yet.</p>
+    
+    <h2>Alentejo, Portugal</h2>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, deserunt sunt. Ab, minima quod aperiam iure quos fugit tenetur nam labore impedit maiores enim       amet perspiciatis quae et, eius exercitationem.</p>
+    
+      <ul><!-- ul>li*3{text} -->
+        <li>Temperature</li>
+        <li>Heat rating</li>
+        <li>water color</li>
+      </ul>      
+    
+    Author : OneTwo <br>
+    Date : April 28, 1998, 4:40am
+
+    <p>2021 Webinaa Media LLC. Contact : Fox@Webinaa.com</p>
+    
+  </body>
+</html>
+```  
