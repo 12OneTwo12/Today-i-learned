@@ -72,3 +72,22 @@
     <h1>Best Places To Visit Post-Pandemic</h1>
   </body>
 </html>
+```  
+  
+  타이틀 뿐만 아니라 뉴스를 게시한 시간과 날짜, 그리고 누가 게시했는 지까지 적어주려 했다.  
+    
+``` html
+<!DOCTYPE html>      
+<html lang="en">     
+<head>               
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneTwo News</title>        
+</head>
+  <body>
+    <h1>Best Places To Visit Post-Pandemic</h1>
+    Author : Frog, Fox Date : Jun 3, 2021, 4:40am
+  </body>
+</html>
+```  
