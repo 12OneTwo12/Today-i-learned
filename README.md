@@ -7,3 +7,7 @@
 ### Record
   
 * [[ 2022-july-11 ] 시작](https://github.com/12OneTwo12/TIL/blob/main/record/20220710.md)
+
+### Basic  
+  
+* [Internet과 Web](https://github.com/12OneTwo12/TIL/blob/main/Basic/Internet.md)
