@@ -73,6 +73,8 @@
   </body>
 </html>
 ```  
+  
+    
  * #### 줄바꿈  
      
   타이틀 뿐만 아니라 뉴스를 게시한 시간과 날짜, 그리고 누가 게시했는 지까지 적어주려 했다.  
@@ -158,3 +160,54 @@
    줄을 어떻게 정리 하느냐의 차이인듯 싶다.   
    
     
+ * ### SEO  
+     
+   SEO란 Search Engine Optimization, 검색 엔진 최적화  
+   우리가 무언가를 검색 했을때 가장 알맞는 결과를 보여주기 위한 엔진인데
+   h 태그가 이를 도와준다고 한다.         
+   그렇다면 h1 태그를 남발하면 검색 엔진 상단에 노출되기 쉬워 기사 조회수를 늘릴 수 있지 않을까?  
+       
+      ```
+      SEO의 검색 인덱싱(Indexing)에 잘 들어가기 위해 우리는 태그를 단순히 시각적인 기능(ex. <br>)으로 뿐만 아니라 의미론적(Semantic)으로도 잘 사용할수록 더 좋음.  
+      또한 장애인, 유아, 노인들을 위한 웹 접근성(Web accessibility)의 측면도 존재.  
+      이러한 것 들을 준수하는 것을 웹 표준이라고 함.  
+      따라서 h1 태그는 SEO가 볼 때 대주제 혹은 제목으로 표시되기 때문에 각 페이지당 한 번만 사용하는 것이 좋음.   
+      만약 h1 태그가 중복될 경우 검색엔진은 사이트의 구조 파악이 어려워지게 되고, 추천 검색 순위에서 밀리게 될 확률이 높음.  
+        → "h2 태그는 상위 노출을 시키고 싶은 키워드를 포함하되, 너무 많은 키워드 사용은 자제하는 것이 좋다"와 같은 각각의 활용법이 존재함.  
+      ```
+     
+   남발하는 것은 안좋다고 한다.  
+   이제 나머지 기사를 채워보자.  
+   여행지 이름을 작성하고 Lorem을 통해 적당히 내용을 채워보자.  
+     
+    
+    Lorem ipsum : 의미 없는 dummy 텍스트를 작성하여 우선 화면의 구성과 느낌만 보고 싶을 때 주로 활용.
+      
+      
+``` html
+<!DOCTYPE html>      
+<html lang="en">     
+<head>               
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneTwo News</title>        
+</head>
+  <body>
+     <h1>Best Places To Visit Post-Pandemic</h1>
+
+    <p>More people are being vaccinated everyday and travel is already top of mind.</p>
+    
+    <p>Suddenly, the whole world feels in reach again, even if travel restrictions haven’t quite been lifted yet.</p>
+    
+    <h2>Alentejo, Portugal</h2>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, deserunt sunt. Ab, minima quod aperiam iure quos fugit tenetur nam labore impedit maiores enim       amet perspiciatis quae et, eius exercitationem.</p>
+    
+    Author : OneTwo <br>
+    Date : April 28, 1998, 4:40am
+
+  </body>
+</html>
+```  
+      
