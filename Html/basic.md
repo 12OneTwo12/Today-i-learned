@@ -75,7 +75,7 @@
 ```  
   
   타이틀 뿐만 아니라 뉴스를 게시한 시간과 날짜, 그리고 누가 게시했는 지까지 적어주려 했다.  
-    
+      
 ``` html
 <!DOCTYPE html>      
 <html lang="en">     
@@ -87,7 +87,8 @@
 </head>
   <body>
     <h1>Best Places To Visit Post-Pandemic</h1>
-    Author : Frog, Fox Date : Jun 3, 2021, 4:40am
+    Author : Frog 
+    Fox Date : Jun 3, 2021, 4:40am
   </body>
 </html>
 ```  
