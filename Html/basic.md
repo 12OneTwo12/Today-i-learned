@@ -87,8 +87,32 @@
 </head>
   <body>
     <h1>Best Places To Visit Post-Pandemic</h1>
-    Author : Frog 
-    Fox Date : Jun 3, 2021, 4:40am
+    Author : OneTwo 
+    Date : April 28, 1998, 4:40am
   </body>
 </html>
 ```  
+  
+  마찬가지로 실행해보았으나 조금 이상하다.  
+  내가 원한것은 저자와 날짜가 다른 줄에 표기되길 바랬으나 한줄로 표기돼버렸다.  
+  해결 방법이 없을까?  
+  줄바꿈을 할 수있는 태그를 찾아보았다.  
+  <p> 라고 하는 태그를 찾게 됐다.  
+    
+``` html
+<!DOCTYPE html>      
+<html lang="en">     
+<head>               
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneTwo News</title>        
+</head>
+  <body>
+    <h1>Best Places To Visit Post-Pandemic</h1>
+    <p>Author : OneTwo </p>
+    <p>Date : April 28, 1998, 4:40am</p>
+  </body>
+</html>
+```  
+  
