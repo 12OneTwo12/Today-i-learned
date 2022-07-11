@@ -97,7 +97,7 @@
   내가 원한것은 저자와 날짜가 다른 줄에 표기되길 바랬으나 한줄로 표기돼버렸다.  
   해결 방법이 없을까?  
   줄바꿈을 할 수있는 태그를 찾아보았다.  
-  <p> 라고 하는 태그를 찾게 됐다.  
+  <br> 라고 하는 태그를 찾게 됐다.  
     
 ``` html
 <!DOCTYPE html>      
@@ -110,9 +110,48 @@
 </head>
   <body>
     <h1>Best Places To Visit Post-Pandemic</h1>
-    <p>Author : OneTwo </p>
-    <p>Date : April 28, 1998, 4:40am</p>
+    Author : OneTwo <br>
+    Date : April 28, 1998, 4:40am
+  </body>
+</html>
+```  
+    
+  정상적으로 줄바꿈이 되었다.  
+  그렇다면 br은 무엇의 약자일까?  
+  찾아보니 break 라고한다.  
+  멈춘다는 뜻이겠지 싶다.  
+  이제 문단을 구분하여 본문을 작성하려 한다.  
+    
+``` html
+<!DOCTYPE html>      
+<html lang="en">     
+<head>               
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneTwo News</title>        
+</head>
+  <body>
+    <h1>Best Places To Visit Post-Pandemic</h1>
+    
+    <p>More people are being vaccinated everyday and travel is already top of mind.</p>
+    
+    <p>Suddenly, the whole world feels in reach again, even if travel restrictions haven’t quite been lifted yet.</p>
+    
+    Author : OneTwo <br>
+    Date : April 28, 1998, 4:40am
   </body>
 </html>
 ```  
   
+  문단이 잘 구분되어 실행되는 모습을 볼 수 있었다.  
+  그렇다면 p는 무엇의 약자일까?  
+  찾아보니 paragraph라고 한다.  
+  문단 이라는 뜻을 가지고 있으니 굉장히 잘맞는 단어 선택이라고 느껴진다.  
+  <p> 말고 다른 문단 기능을 가진 태그도 있는지 찾아보았다.  
+  <p> <div> <span> 이 있는데, 이들의 차이점이 뭘까?  
+      
+    ![image url](https://github.com/12OneTwo12/TIL/blob/main/Html/laknfglaknglvaekrf.png?raw=true)  
+      
+    이렇다고 한다.  
+    줄을 어떻게 정리 하느냐의 차이인듯 싶다.   
