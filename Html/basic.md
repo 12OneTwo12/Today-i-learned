@@ -47,14 +47,28 @@
       
 ``` html
 <html>
-<body>
-안녕하세요
-</body>
+  <body>
+    안녕하세요
+  </body>
 </html>
 ```  
   
   실행결과는 만족스러웠다.  
   브라우저를 통해 실행해보니 안녕하세요라는 문구가 떠있었다.  
   그 이후로부터는 상황을 만들어보기로 했다.  
-  뉴스 기사가 만들어야 하는 상황을 가정하고 진행해보았다.  
+  뉴스 기사가 만들어야 하는 상황을 가정하고 진행해보았다.
+  VSCode를 사용하여 좀더 효율을 높이고자 했다.  
     
+``` html
+<!DOCTYPE html>      <!-- Document type은 html이다. "이 문서의 타입은 html임을 명시" -->
+<html lang="en">     <!-- 모든 html 태그의 최상단에 작성해야하는 태그, html이라는 태그의 attribute는 lang -->
+<head>               <!-- 문서의 부가적인 정보(Meta information) 표기 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneTwo News</title>        <!--브라우저 탭에 뜨는 정보 -->
+</head>
+  <body>
+    <h1>Best Places To Visit Post-Pandemic</h1>
+  </body>
+</html>
