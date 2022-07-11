@@ -39,3 +39,4 @@
       
     태그를 보면 src, alt와 같은 별도의 속성(attribute)를 지정할 수 있는 태그들이 있다.  
     ![image url](https://github.com/12OneTwo12/TIL/blob/main/Html/Untitled.png?raw=true)  
+    이러한 태그들을 element(요소)라고 부르기도 한다.  
