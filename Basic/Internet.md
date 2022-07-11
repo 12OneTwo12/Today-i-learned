@@ -22,4 +22,4 @@
     아직까지 정확하게 설명하지 못하는 건 내 공부가 부족해서 일것이다.  
       
     나는 Web은 Internet을 기반으로 하여 이용할 수 있는 서비스 중 하나라고 이해했다.
-    ![image url](![image](https://user-images.githubusercontent.com/105261146/178267398-35c3efbb-d17b-4663-b8fc-7cc23f976284.png)  
+    ![image url](https://user-images.githubusercontent.com/105261146/178267398-35c3efbb-d17b-4663-b8fc-7cc23f976284.png)  
