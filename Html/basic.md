@@ -288,3 +288,131 @@
 </html>
 ```  
     
+  코드가 점점 길어져서 한번에 알아보기 어렵게 바뀌고 있다.  
+  이제 가독성과 SEO를 이용하기 위해 의미단위로 구분하는 Semantic Tag를 사용하고자 한다.  
+   
+``` html
+<!DOCTYPE html>      
+<html lang="en">     
+<head>               
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneTwo News</title>        
+</head>
+  <body>
+    <article>
+      <h1>Best Places To Visit Post-Pandemic</h1>
+
+      <p>More people are being vaccinated everyday and travel is already top of mind.</p>
+    
+      <p>Suddenly, the whole world feels in reach again, even if travel restrictions haven’t quite been lifted yet.</p>
+    
+      <h2>Alentejo, Portugal</h2>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, deserunt sunt. Ab, minima quod aperiam iure quos fugit tenetur nam labore impedit maiores enim       amet perspiciatis quae et, eius exercitationem.</p>
+    
+        <ul><!-- ul>li*3{text} -->
+          <li>Temperature</li>
+          <li>Heat rating</li>
+          <li>water color</li>
+        </ul>
+    
+      <a href="https://en.wikipedia.org/wiki/Alentejo">More information</a>   <!-- a href 는 Hyperlink. 링크 타고 들어갈 수 있게 해줌 -->
+    </article>
+    
+    <footer>
+      Author : OneTwo <br>
+      Date : April 28, 1998, 4:40am
+
+      <p>2021 OneTwo Media LLC. Contact : 123456@email.com</p>
+    </footer>
+  </body>
+</html>
+```  
+  
+   이러면 나중에 보더라도 가독성이 좋아 유지보수에도 좋을거 같다.  
+   이제 마무리 단계에 들어가보자.  
+      
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--문서의 문자 인코딩 방식 -->
+	<meta charset="UTF-8"/>
+	<!--문서의 저자, 작성자 -->
+  <meta name="author" content="Yoo"/>
+	<!--문서의 설명, 개요 -->
+	<meta name="dsecription" content="HTML tutorial"/>
+	<!--웹 애플리케이션 이름 -->
+	<meta name="application-name" content="Application name"/>
+	<!--웹 페이지의 뷰포트 영역 -->
+  <meta name="viewport" content=""/>
+	<!--검색 엔진에 적용되는 키워드 목록 -->
+  <meta name="keywords" content=""/>
+	<!--문서에 사용되는 소프트웨어 패키지 -->
+  <meta name="generator" content=""/>
+	<!-- 지정된 HTTP 헤더 제공 -->
+	<meta http-equiv="refresh" content="3"/>
+  </head>
+    <body>
+ 
+    </body>
+</html>
+```
+    
+  마지막으로 기사에 이미지를 삽입해보자.  
+  이미지를 삽입할때 쓰이는 태그는 img 라고 한다.  
+  쓰이는 attribute는 src이고 img는 딱봐도 image인것같고,  
+  src는 source의 약자라고 한다.  
+  img src=를 써준다음은 alt도 입력해줘야하는데  
+  alt는 이미지가 에러가 났을때 표기될 문구를 뜻한다.  
+  한번 해보자.  
+  
+``` html
+<!DOCTYPE html>      
+<html lang="en">     
+<head>               
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneTwo News</title>        
+</head>
+  <body>
+    <article>
+      <h1>Best Places To Visit Post-Pandemic</h1>
+
+      <p>More people are being vaccinated everyday and travel is already top of mind.</p>
+    
+      <p>Suddenly, the whole world feels in reach again, even if travel restrictions haven’t quite been lifted yet.</p>
+      
+      <!-- 이미지 첨부 예정 -->
+      <p><img src="https://github.com/12OneTwo12/TIL/blob/main/Html/og.jpg?raw=true" alt="error"></p>
+    
+      <h2>Alentejo, Portugal</h2>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, deserunt sunt. Ab, minima quod aperiam iure quos fugit tenetur nam labore impedit maiores enim       amet perspiciatis quae et, eius exercitationem.</p>
+    
+        <ul><!-- ul>li*3{text} -->
+          <li>Temperature</li>
+          <li>Heat rating</li>
+          <li>water color</li>
+        </ul>
+    
+      <a href="https://en.wikipedia.org/wiki/Alentejo">More information</a>   <!-- a href 는 Hyperlink. 링크 타고 들어갈 수 있게 해줌 -->
+    </article>
+    
+    <footer>
+      Author : OneTwo <br>
+      Date : April 28, 1998, 4:40am
+
+      <p>2021 OneTwo Media LLC. Contact : 123456@email.com</p>
+    </footer>
+  </body>
+</html>
+```    
+    
+   자 그럼 드디어 완성됐다.  
+   그 결과는 이렇다.  
+   ![image url](https://github.com/12OneTwo12/TIL/blob/main/Html/dptl.png?raw=true)  
+     
