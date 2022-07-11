@@ -20,5 +20,6 @@
     간단하게 내가 이해한바를 정리해보자면 Web site는 Internet을 이용하여 접속할 수 있는 인터넷안에서의 공간이라는 생각이 들었다.  
     Internet이 도로라면 Client가 차량을 탄 사람이고 Web site는 차량을 운전해서 도착한 호텔같은 느낌?  
     아직까지 정확하게 설명하지 못하는 건 내 공부가 부족해서 일것이다.  
-    
-    개념적으로는 Internet이 Web보다 큰
+      
+    나는 Web은 Internet을 기반으로 하여 이용할 수 있는 서비스 중 하나라고 이해했다.
+    ![image url](![image](https://user-images.githubusercontent.com/105261146/178267398-35c3efbb-d17b-4663-b8fc-7cc23f976284.png)  
