@@ -2,7 +2,7 @@
   
   HTML은 Hyper Text Markup Language 약어로 HyperText 기능을 가진 문서를 만드는 언어이다.  
   솔직히 처음엔 무슨말인지 이해를 못했다.  
-  대부분의 Web site에서 사용된다고 하는데 일단 HyperText라는 기능이 무엇인지조차 모르니 일단 찾아보기로 했다.  
+  많은 Web site에서 사용된다고 하는데 일단 HyperText라는 기능이 무엇인지조차 모르니 일단 찾아보기로 했다.  
     
   * #### HyperText
     
