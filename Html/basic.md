@@ -38,4 +38,4 @@
     </ >처럼 태그 내부에 /가 있는 태그를 Closing tag라고 한다.  
       
     태그를 보면 src, alt와 같은 별도의 속성(attribute)를 지정할 수 있는 태그들이 있다.  
-    [image url](https://github.com/12OneTwo12/TIL/blob/main/Html/Untitled.png?raw=true)  
+    [!image url](https://github.com/12OneTwo12/TIL/blob/main/Html/Untitled.png?raw=true)  
