@@ -242,8 +242,49 @@
     Author : OneTwo <br>
     Date : April 28, 1998, 4:40am
 
-    <p>2021 Webinaa Media LLC. Contact : Fox@Webinaa.com</p>
+    <p>2021 OneTwo Media LLC. Contact : 123456@email.com</p>
     
   </body>
 </html>
 ```  
+  
+    더 많은 여행지 정보를 알려주기 위해 처음 HTML을 배우면서 알게 됐던 Hyperlink를 사용해보려고 한다.   
+    자세한 내용은 위키피디아로 갈 수 있는 링크를 걸어보려고 한다.  
+    
+``` html
+<!DOCTYPE html>      
+<html lang="en">     
+<head>               
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneTwo News</title>        
+</head>
+  <body>
+     <h1>Best Places To Visit Post-Pandemic</h1>
+
+    <p>More people are being vaccinated everyday and travel is already top of mind.</p>
+    
+    <p>Suddenly, the whole world feels in reach again, even if travel restrictions haven’t quite been lifted yet.</p>
+    
+    <h2>Alentejo, Portugal</h2>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, deserunt sunt. Ab, minima quod aperiam iure quos fugit tenetur nam labore impedit maiores enim       amet perspiciatis quae et, eius exercitationem.</p>
+    
+      <ul><!-- ul>li*3{text} -->
+        <li>Temperature</li>
+        <li>Heat rating</li>
+        <li>water color</li>
+      </ul>
+    
+      <a href="https://en.wikipedia.org/wiki/Alentejo">More information</a>   <!-- a href 는 Hyperlink. 링크 타고 들어갈 수 있게 해줌 -->
+    
+    Author : OneTwo <br>
+    Date : April 28, 1998, 4:40am
+
+    <p>2021 OneTwo Media LLC. Contact : 123456@email.com</p>
+    
+  </body>
+</html>
+```  
+    
