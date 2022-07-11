@@ -1,4 +1,4 @@
-# H  
+# HTML  
   
   HTML은 Hyper Text Markup Language 약어로 HyperText 기능을 가진 문서를 만드는 언어이다.  
   솔직히 처음엔 무슨말인지 이해를 못했다.  
