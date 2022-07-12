@@ -2,8 +2,19 @@
 #### [ 2022-07-12 ]  
   
 ## 목차  
-  * ### [ 기본 선택자(CSS Selectors) ](#기본-선택자css-selectors)  
-  * ### [ 조합 선택자(CSS Combinator Selectors) ](#조합-선택자css-combinator-selectors)  
+  * #### [[ 기본 선택자(CSS Selectors) ]](#기본-선택자css-selectors)  
+  * #### [[ 조합 선택자(CSS Combinator Selectors) ]](#조합-선택자css-combinator-selectors)  
+  * #### [[ 코드 순서(CSS Overriding) ]](#코드-순서css-overriding)  
+  * #### [[ 적용범위, 명시도 or 구체성(CSS Specificity) ]](#적용범위-명시도-or-구체성css-specificity)  
+  * #### [[ 상속(CSS Inheritance) ]](#상속css-inheritance)  
+  * #### [[ Text 폰트 ]](#text-폰트)  
+  * #### [[ 크기 단위 ]](#크기-단위)
+  * #### [[ HTML Element의 display 속성 2가지 ]](#html-element의-display-속성-2가지)    
+  * #### [[ width와 height ]](#width와-height)  
+  * #### [[ 박스 모델(CSS Box model) ]](#박스-모델css-box-model)  
+-----------------------------------------------------------------------------------------------------------------------------------------
+      
+        
     
 * #### 기본 선택자(CSS Selectors)      
   
@@ -242,7 +253,7 @@ div + p {
   실행 해보게 되면 그래도 좀더 이해 되는 거 같다. 물론 아직까지 전부 제대로 이해했다고 자랑스럽게 말하긴 어려울 거 같다.  
     
   
-* #### CSS 코드 순서(CSS Overriding)  
+* #### 코드 순서(CSS Overriding)  
     
   문득 한가지 궁금한 점이 생겼다.    
   Internal style과 External style을 중복 지정 했을 경우는 어떤 결과가 나올까?  
@@ -302,7 +313,7 @@ div + p {
   이로써 우선순위가 [ inline > 가장 나중(아래, 적용하고자 하는 코드와 더 가까운)에 적용된 style > 나머지 ] 로 확인됐다.  
   이와 같이 어떤 명령을 우선적으로 실행하는 가에 대한 것을 CSS Specificity 라고 한다.  
   
-* #### CSS 적용범위, 명시도 or 구체성(CSS Specificity)  
+* #### 적용범위, 명시도 or 구체성(CSS Specificity)  
    
   지금까지 내가 알게된 것들을 간단한 예제를 만들어 실험해보고자 한다.  
   이론적인 것을 보는 것보다 결과로 보는게 더욱 직관적으로 이해 할 수 있는 것 같다.  
@@ -357,7 +368,7 @@ p{
   결과는 Inline style > Id Selector > Class Selector > Tag or Type Selector > Universal Selector 순이였다. 
   이러한 명시도들을 확인 할 수 있는 사이트또한 따로 있었다.  [ 명시도 계산 ](https://specificity.keegan.st/)
   
-* #### CSS 상속(CSS Inheritance)  
+* #### 상속(CSS Inheritance)  
 
   CSS 상속(CSS Inheritance)이란, CSS에도 다른 프로그래밍 언어들처럼 상속(Inheritance)이라는 개념이 있다. 하위 엘리먼트에서 어떤 CSS 속성을 명시하지 않은 경우, 기본적으로 상위 엘리먼트에 적용된 스타일이 하위 엘리먼트에도 적용되는 것을 뜻한다.  
   마찬가지로 예제를 보며 이해해 보자.  
@@ -423,7 +434,7 @@ h3{
   상속되는 속성은 주로 font 관련 속성들이 상속된다.(font-style, color, text-align(정렬) 등)  
   상속되지 않는 속성도 존재하는데 ex)border 강제로 상속할 수 있는 방법또한 있다는 걸 알게 됐다. 강제 상속: inherit  
     
-* #### CSS Text 폰트  
+* #### Text 폰트  
 
   이제 기본적인 것들은 조금은 이해가 된거같다.  
   어제 만들었던 html을 제대로 꾸며보기 위해 default값으로 설정된 폰트가 아니라 따로 폰트를 적용하고자 했다.  
@@ -607,7 +618,7 @@ tr, td{
   #a52a2a와 RGB(0, 255, 0), 그리고 RGBA(0, 0, 255, 0.4)는 색을 지정하는 역활을 한다.  
   그렇다면 px,em,rem,%의 차이점은 무엇일까?  
     
-* ### px,em,rem,%  
+* ### 크기 단위  
 
   * ##### px
     
@@ -634,7 +645,7 @@ tr, td{
         사이트 전체적으로 font-size를 조정해야 한다면 root의 속성값을 변경해주면 된다.  
     
     
-* #### HTML Element의 display 속성 2가지 : Block / Inline  
+* #### HTML Element의 display 속성 2가지   
 
     HTML에서 display에는 두 가지 속성이 있는데, Block과 Inline이다.  
     block 속성은 무조건 한줄을 점유하고 있는 것을 말하며, 다음 태그는 무조건 줄바꿈이 적용된다. 대표적인 태그는 p와 div가 있다.  
@@ -645,7 +656,7 @@ tr, td{
       
     이렇게 말이다.  
         
-* #### CSS width / height    
+* #### width와 height    
 
     width와 height 속성은 각각 가로 길이, 세로 길이를 의미한다.  
     이는 다양하게 활용 될 수 있는데, 위에 말한 div, span에도 활용 될 수 있다.  
@@ -754,7 +765,7 @@ html, body{
   그 결과는 이렇다.  
   결과를 보고 코드와 비교해보니 훨씬 이해가 더 쉬워졌다.  
     
-* #### CSS 박스 모델(CSS Box model)   
+* #### 박스 모델(CSS Box model)   
 
   CSS 박스 모델은 HTML element가 웹 페이지에서 차지하는 공간을 정의한 모델이다.  
   HTML element들은 각각 자신만의 영역을 갖고 있으며, 각 영역은 다시 여러개의 작은 영역으로 나뉜다.  
