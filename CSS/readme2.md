@@ -3,8 +3,8 @@
   
 ## 목차  
   * ### [ 기본 선택자(CSS Selectors) ](#[-기본-선택자css-selectors-])  
-  * ### [ 조합 선택자(CSS Combinator Selectors) ](#조합 선택자css-combinator-selectors)
-  
+  * ### [ 조합 선택자(CSS Combinator Selectors) ](#조합 선택자css-combinator-selectors)  
+    
 * #### 기본 선택자(CSS Selectors)      
   
   이번에는 CSS의 선택자에 대해 알아보려고 한다. 
