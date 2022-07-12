@@ -59,4 +59,30 @@
        
   * #### Internal Style이란  
   
+       HTML 문서 내의 head 태그에 style 태그를 사용하여 CSS 스타일을 적용하는 방법이다.  
+       마찬가지로 예제를 봐서 이해해보자.  
+       
+       ```html
+        <html>
+          <head>
+            <style>
+              .internal{
+                  color: blue; 
+               }
+            </style>
+          </head>
+          
+          <body>
+            <h1 class="internal"> 이 문장은 Internal Style로 꾸며봤습니다.</h1>
+          </body>
+        <html>
+       ```  
   
+      실행결과 마찬가지로 글씨가 파란색으로 나왔다.  
+      h1 태그를 internal이라는 class로 분류하였고,  
+      head 태그 안에 style 태그를 사용하여 internal이라고 부르는 class의 글자 색을 파란색으로 바꿔줬다.  
+      그렇다면 이것보다 주로 쓰이는 방법도 있을까?  
+        
+  * #### External Style이란  
+   
+      
