@@ -18,4 +18,13 @@
   
   ![image url](https://github.com/12OneTwo12/TIL/blob/main/CSS/naverwithoutcss.png?raw=true)  
     
+  평소 우리가 보던 네이버와는 사뭇 다른 모습이다.  
+  마치 무엇인가 많이 비어있는 것처럼 보이는 별로 손이 잘 안가게 되는 웹 사이트 처럼 생겼다.  
+  실제 네이버 사이트와 비교해보면 더욱 잘 느낄 수 있는데                  [참조. [NAVER web site link]](https://www.naver.com/)   
+  이처럼 우리의 눈은 이미 CSS를 이용한 웹 사이트들을 항상 겪고 있었다고 볼 수 있다.  
+  그렇다면 내가 만든 html에도 적용 해보고자 한다.  
+      
+  
+* #### CSS를 적용하는 방법  
+  
   
