@@ -750,3 +750,66 @@ html, body{
   그 결과는 이렇다.  
   결과를 보고 코드와 비교해보니 훨씬 이해가 더 쉬워졌다.  
     
+* #### CSS 박스 모델(CSS Box model)   
+
+  CSS 박스 모델은 HTML element가 웹 페이지에서 차지하는 공간을 정의한 모델이다.  
+  HTML element들은 각각 자신만의 영역을 갖고 있으며, 각 영역은 다시 여러개의 작은 영역으로 나뉜다.  
+    
+  ![image url](https://github.com/12OneTwo12/TIL/blob/main/CSS/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%20(1).png?raw=true)  
+    
+  각 element는 가운데 실제 element의 내용이 담긴 부분(content), element를 감싸는 경계(border),  
+  border와 content 사이의 영역(padding), border 바깥의 영역(margin)으로 구성된다.  
+    
+  마찬가지로 예제를 통해 코드를 보며 결과물과 비교하여 이해를 보다 쉽게 했다.  
+    
+```html
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="box_model.css">
+      <title>Document</title>
+  </head>
+  <body>
+      <h1>CSS 박스 모델(CSS Box model)</h1>
+      <hr />
+
+      <h2>모든 element는 Box 형태의 구조를 가지고 있음.(CDT에서 확인)</h2>
+      <br />
+
+      <div class="box">content area</div>
+
+      <a href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">MDN</a>
+      <a href="https://www.freecodecamp.org/news/css-box-model-explained-with-examples/">Ref</a>
+  </body>
+</html>
+```
+```css
+/* body{
+    border: 1px solid blue;
+    padding: 10px;
+    margin: 0px;
+} */
+
+/* margin=바깥여백 */
+/* border=경계선
+padding=안쪽여백 */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* default value : content-box
+       border-box : padding+border+box = width로 계산 */
+}
+
+.box{
+    width: 300px;
+    border: 5px dashed sienna;
+    background-color: skyblue;
+    font-size: 50px;
+    padding: 20px;
+}
+```  
+  
