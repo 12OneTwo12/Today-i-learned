@@ -419,3 +419,175 @@ h3{
   상속되는 속성은 주로 font 관련 속성들이 상속된다.(font-style, color, text-align(정렬) 등)  
   상속되지 않는 속성도 존재하는데 ex)border 강제로 상속할 수 있는 방법또한 있다는 걸 알게 됐다. 강제 상속: inherit  
     
+* #### CSS Text 폰트  
+
+  이제 기본적인 것들은 조금은 이해가 된거같다.  
+  어제 만들었던 html을 제대로 꾸며보기 위해 default값으로 설정된 폰트가 아니라 따로 폰트를 적용하고자 했다.  
+    
+    *  문법  
+  
+                  font-family	글꼴 (굴림, 돋움, …)  
+                  font-style	이탤릭체 등의 글꼴의 스타일 지정  
+                  font-weight	글자 두께  
+                  font-variant	글꼴 변형 (소문자를 대문자로 바꾸는 등의)  
+                  font-size	글자 크기  
+                  line-height	줄 간격  
+                  
+    *  폰트 등록  
+  
+        [ 구글 폰트 사이트 ](https://fonts.google.com/) 에서 마음에 드는 폰트를 찾아 링크를 복사하여 head란에 붙여넣는다.  
+ 
+        ```html
+          <head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+          </head>
+        ```  
+          
+        그리고 아래 보이는 CSS rules to specify families 란에 적힌 문구로 호출한다.  
+        ex) font-family: 'Lora', serif;  
+          
+        마찬가지로 예제.  
+          
+```html
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Text / Font-family / Units</title>
+      <link rel="stylesheet" href="text_font_units.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Oswald&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <h1>CSS Text / Font-family / Units</h1>
+
+      <h2>Text / Font-family</h2>
+      <table class="tbl"> <!-- 표 만드는 태그 -->
+          <tr> <!-- table row의 줄임 표현, 한 행 -->
+              <th>Text</th> <!-- table head의 줄임 표현-->
+              <th>Color</th>
+              <th>Font-family(style)</th>
+          </tr>
+          <tr class="browser-color">
+              <td>브라우저 기본 폰트 텍스트</td> <!-- table data의 줄임 표현 -->
+              <td>red</td>
+              <td>Browser default</td>
+          </tr>
+          <tr class="google-hex">
+              <td>Google Web Font 텍스트</td>
+              <td>#a52a2a(brown hex color)</td>
+              <td>Oswald</td>
+          </tr>
+          <tr class="google-rgb">
+              <td>Google Web Font 텍스트</td>
+              <td>RGB(0, 255, 0)</td>
+              <td>Fuzzy Bubbles</td>
+          </tr>
+          <tr class="google-rgba">
+              <td>Google Web Font 텍스트</td>
+              <td>RGBA(0, 0, 255, 0.4)</td>
+              <td>Raleway</td>
+          </tr>
+      </table>
+
+      <h2>Units</h2>
+      <hr><br>
+
+      <div class="px-parent" style="Color:blue">
+          px-parent text
+          <div class="px-child">
+              px-child text
+          </div>
+      </div>
+
+      <br><hr>
+      <!-- em : (Relative to parent element) %와 동일.-->
+      <div class="em-parent">
+          em-parent text
+          <div class="em-child">em-child text</div>
+      </div>
+
+      <br><hr>
+      <!-- rem : (Relative to root element) 루트에 지정된 폰트사이즈의 크기에 따라 지정.-->
+      <div class="rem-parent">
+          rem-parent text
+          <div class="rem-child">
+              rem-child text
+          </div>
+      </div>
+      <br><hr>
+  </body>
+</html>
+```  
+```css
+html{
+    font-size: 22px;
+}
+
+table, th, td{
+
+    text-align: center; /*tac 텍스트 중앙으로 정렬 */
+
+    border-collapse: collapse;
+    border: 1px solid black; /* 경계선 */
+
+    border-spacing: 10px;
+    margin: 0 auto; /* 중앙 정령 */
+}
+
+tr, td{
+    padding: 10px; /* 안쪽 여백 */
+}
+
+.browser-color{
+    color: red;
+}
+
+.google-hex{
+    color: #a52a2a;
+    font-family: oswald;
+}
+
+.google-rgb{
+    color: RGB(0, 255, 0);
+    font-family: Fuzzy Bubbles;
+}
+
+.google-rgba{
+    color: RGBA(0, 0, 255, 0.4);
+    font-family: Raleway;
+}
+
+.px-parent{
+    font-size: 32px;
+    /* font-size:16px; browser default px */
+}
+
+.px-child{
+    font-size: 16px;
+}
+
+.em-parent{
+    font-size: 3em;
+    /* 1em = browser default 값 */
+    /* 3em = browser default 300% */
+}
+
+.em-child{
+    font-size: 0.5em;
+    /* 부모의 절반 */
+}
+
+.rem-parent{
+    font-size: 3rem;
+}
+
+.rem-child{
+    font-size: 0.5rem;
+    /* browser default 값의 절반 */
+}
+```  
