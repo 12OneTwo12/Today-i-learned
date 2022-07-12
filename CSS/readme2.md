@@ -3,9 +3,9 @@
   
 ## 목차  
   * ### [ CSS 기본 선택자(CSS Selectors) ](#css-기본-선택자)  
-  * ### [ CSS 조합 선택자(CSS Combinator Selectors) ](#css-조합-선택자)
+  * ### [ CSS 조합 선택자(CSS Combinator Selectors) ](#[-css-조합-선택자(css-selectors)-])
   
-* #### CSS 기본 선택자(CSS Selectors)  
+* #### [ CSS 기본 선택자(CSS Selectors) ]  
   
   이번에는 CSS의 선택자에 대해 알아보려고 한다. 
   
