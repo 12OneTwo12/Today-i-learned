@@ -6,17 +6,17 @@
   
 ### Record
   
-* [[ 2022-july-11 ] 시작](https://github.com/12OneTwo12/TIL/blob/main/record/20220710.md)
+* [[ 시작 ]( 2022-july-10 )](https://github.com/12OneTwo12/TIL/blob/main/record/20220710.md)
 
 ### Basic  
   
-* [Internet과 Web](https://github.com/12OneTwo12/TIL/blob/main/Basic/Internet.md)
+* [[ Internet과 Web ]](https://github.com/12OneTwo12/TIL/blob/main/Basic/Internet.md)
 
 ### HTML
 
-* [HTML](https://github.com/12OneTwo12/TIL/blob/main/Html/basic.md)
+* [[ HTML] ](https://github.com/12OneTwo12/TIL/blob/main/Html/basic.md)
   
 ### CSS
   
-* [ CSS란 무엇이고 어떻게 적용하는가 ](https://github.com/12OneTwo12/TIL/blob/main/CSS/readme.md)
-* [ CSS에 대해 조금 더 세부적으로 알아보자 ](https://github.com/12OneTwo12/TIL/blob/main/CSS/readme2.md)  
+* [[ CSS란 무엇이고 어떻게 적용하는가 ]](https://github.com/12OneTwo12/TIL/blob/main/CSS/readme.md)
+* [[ CSS에 대해 조금 더 세부적으로 알아보자 ]](https://github.com/12OneTwo12/TIL/blob/main/CSS/readme2.md)  
