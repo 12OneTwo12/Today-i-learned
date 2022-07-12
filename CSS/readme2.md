@@ -2,10 +2,10 @@
 #### [ 2022-07-12 ]  
   
 ## 목차  
-  * ### [ CSS 기본 선택자(CSS Selectors) ](#css-기본-선택자)  
-  * ### [ CSS 조합 선택자(CSS Combinator Selectors) ](#-css-조합-선택자css-selectors)
+  * ### [ 기본 선택자(CSS Selectors) ](#기본-선택자css-selectors)  
+  * ### [ 조합 선택자(CSS Combinator Selectors) ](#css-조합-선택자css-selectors)
   
-* #### CSS 기본 선택자(CSS Selectors)    
+* #### 기본 선택자(CSS Selectors)    
   
   이번에는 CSS의 선택자에 대해 알아보려고 한다. 
   
@@ -84,7 +84,7 @@
   
   예제의 결과물을 보게되면 확실히 선택자가 어떤 일을 하는지 이해할 수 있었다.  
     
-* #### CSS 조합 선택자(CSS Combinator Selectors)  
+* #### 조합 선택자(CSS Combinator Selectors)  
     
   조합 선택자 혹은 결합자란,
       하나의 선택자가 아닌 선택자들을 결합하여 세밀하게 찾을 수 있는 것이 바로 결합자(Combinator)이다. 결합자는 크게 4가지 종류로 볼 수 있다.  
