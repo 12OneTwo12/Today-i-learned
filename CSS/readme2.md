@@ -2,8 +2,8 @@
 #### [ 2022-07-12 ]  
   
 ## 목차  
-  * ### [ 기본 선택자(CSS Selectors) ](#[-기본-선택자css-selectors-])  
-  * ### [ 조합 선택자(CSS Combinator Selectors) ](#조합 선택자css-combinator-selectors)  
+  * ### [ 기본 선택자(CSS Selectors) ](#기본-선택자css-selectors)  
+  * ### [ 조합 선택자(CSS Combinator Selectors) ](#조합-선택자css-combinator-selectors)  
     
 * #### 기본 선택자(CSS Selectors)      
   
