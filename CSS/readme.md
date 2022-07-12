@@ -170,4 +170,6 @@
     
   ![image url](https://github.com/12OneTwo12/TIL/blob/main/CSS/iie.png?raw=true)  
     
-  
+  이처럼 각자 원하는 바대로 실행된 것을 볼 수 있었다.  
+  css의 3가지 스타일 적용 방식을 이해 할 수 있는 시간이였다.  
+    
