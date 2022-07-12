@@ -124,3 +124,50 @@
       그럼 .(마침표)와 #은 무엇일까? 상당히 간단했다.  
       마침표는 class를 호출할때 쓰고, #은 ID를 호출할 때 사용이 되었다.
       알고 보게 되니 위 예제가 더욱 이해가 됐다.  
+  
+* #### Inline, Internal, External 한번에 보기  
+    
+    Inline과 Internal 그리고 External을 한번에 볼 수 있는 예제를 준비했다. css파일은 다음과 같다.  
+
+  ```css
+    .external{
+       color: mediumslateblue; font-size: 50px;
+      }
+  ```
+   
+  예제  
+    
+```html
+
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>illine_internal_external</title>
+      <style>
+          .internal{
+              color: crimson; 
+              font-size: 40px;
+             }
+      </style>
+
+         <link rel="stylesheet" href="inline_internal_external.css">
+
+      </head>
+      <body>
+        <h1>css 스타일 적용 방식(css styling)</h1>
+        <hr>
+
+          <p style="color: teal; font-size: 30px;">Inline style로 적용된 css.</p> <!-- 폰트 색상은 teal, 폰트 크기는 30px-->
+          <p class="internal">Internal style로 적용된 css.</p> <!-- class선택자 활용, internal이라는 value 지정, 폰트 색상은 crimson, 폰트 크기는 40px-->
+          <p class="external">External style로 적용된 css.</p> <!-- css파일에 스타일 적용, 폰트 색상은 mediumslateblue, 폰트 크기는 50px-->
+      </body>
+</html>  
+```  
+    
+  위 결과를 실행 해보자 결과물은 다음과 같았다.  
+    
+  ![image url](https://github.com/12OneTwo12/TIL/blob/main/CSS/iie.png?raw=true)  
+    
+  
