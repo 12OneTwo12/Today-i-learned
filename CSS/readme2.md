@@ -3,7 +3,7 @@
   
 ## 목차  
   * ### [ CSS 기본 선택자(CSS Selectors) ](#css-기본-선택자)  
-  * ### [ CSS 조합 선택자(CSS Combinator Selectors) ](#[-css-조합-선택자(css-selectors)-])
+  * ### [ CSS 조합 선택자(CSS Combinator Selectors) ](#css-조합-선택자css-selectors)
   
 * #### [ CSS 기본 선택자(CSS Selectors) ]  
   
