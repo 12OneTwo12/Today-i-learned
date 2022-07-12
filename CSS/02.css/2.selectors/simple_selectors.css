@@ -1,0 +1,21 @@
+/* General, reset.css, 기본 설정 */
+*{
+    font-family: "Playfair Display", serif;
+}
+
+/* type selector를 활용하여 h2 태그의 색을 slateblue로 적용 */
+
+h2{
+ color: slateblue;
+}
+
+.class-selector{
+    font-size: 30px;
+    border: 2px dashed firebrick; /* 경계선 적용 스타일*/
+}
+
+#id-selector{
+    font-size: 30px;
+    font-style: italic;
+    color: forestgreen;
+}

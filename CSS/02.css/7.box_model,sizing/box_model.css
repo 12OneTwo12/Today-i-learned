@@ -1,0 +1,25 @@
+/* body{
+    border: 1px solid blue;
+    padding: 10px;
+    margin: 0px;
+} */
+
+/* margin=바깥여백 */
+/* border=경계선
+padding=안쪽여백 */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* default value : content-box
+       border-box : padding+border+box = width로 계산 */
+}
+
+.box{
+    width: 300px;
+    border: 5px dashed sienna;
+    background-color: skyblue;
+    font-size: 50px;
+    padding: 20px;
+}

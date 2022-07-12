@@ -1,0 +1,22 @@
+.height-default{
+    /* border: 2px solid greenyellow; */
+    border-width: 2px;
+    border-style: dashed;
+    border-color: greenyellow;
+}
+
+/* .height-px{
+    height: 300px; width: 70%;
+    border: 2px dashed skyblue;
+} */
+
+html, body{
+    /* height: 100%; */
+    height: 100vh;
+    /* viewport height의 줄임말 */
+}
+
+.height-pct{
+    border: 2px dashed tomato;
+    height: 50%;
+}
