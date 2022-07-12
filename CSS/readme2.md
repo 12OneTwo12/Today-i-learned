@@ -238,4 +238,184 @@ div + p {
   실행 해보게 되면 그래도 좀더 이해 되는 거 같다. 물론 아직까지 전부 제대로 이해했다고 자랑스럽게 말하긴 어려울 거 같다.  
     
   
-* #### CSS 코드 순서(CSS Overriding)
+* #### CSS 코드 순서(CSS Overriding)  
+    
+  문득 한가지 궁금한 점이 생겼다.    
+  Internal style과 External style을 중복 지정 했을 경우는 어떤 결과가 나올까?  
+  Internal로 지정한 결과가 나올까 External로 지정한 결과가 나올까?  
+  바로 한번 해보기로 했다.  
+    
+```html
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS 코드 순서(CSS Overriding)</title>
+
+      <style>
+          .internal-vs-external{
+              background-color: burlywood;
+          }
+      </style>
+      <link rel="stylesheet" href="overriding.css">
+  </head>
+  <body>
+
+      <h1>CSS 코드 순서(CSS Overriding)</h1>
+      <hr>
+
+      <h2>같은 type으로 중복 지정하였을 경우</h2>
+      <p>무슨 색이 될까?</p>
+
+      <h2>Internal vs External style 우선 순위</h2>
+      <div class="internal-vs-external">
+          <p>Internal vs External style</p>
+          -> 가장 나중(아래, 적용하고자 하는 코드와 더 가까운)에 적용된 style이 적용됨.
+          internal과 external의 상하 위치 변경
+      </div>
+  </body>
+</html>
+```  
+```css
+  p{
+      font-size: 15px;
+      color: tomato;
+  }
+
+  p{
+      color: mediumpurple;
+  }
+
+  .internal-vs-external {
+      background-color: mediumspringgreen;
+  }
+ ```  
+   
+  실험 결과는 가장 나중(아래, 적용하고자 하는 코드와 더 가까운)에 적용된 style이 적용됐다.  
+  그렇다면 inline style은 어떨가?  
+  결과는 inline의 압승 이였다.  
+  이로써 우선순위가 [ inline > 가장 나중(아래, 적용하고자 하는 코드와 더 가까운)에 적용된 style > 나머지 ] 로 확인됐다.  
+  이와 같이 어떤 명령을 우선적으로 실행하는 가에 대한 것을 CSS Specificity 라고 한다.  
+  
+* #### CSS 적용범위, 명시도 or 구체성(CSS Specificity)  
+   
+  지금까지 내가 알게된 것들을 간단한 예제를 만들어 실험해보고자 한다.  
+  이론적인 것을 보는 것보다 결과로 보는게 더욱 직관적으로 이해 할 수 있는 것 같다.  
+    
+```html
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>CSS Specificity</title>
+      <link rel="stylesheet" href="specificity.css" />
+  </head>
+
+  <body>
+      <h1>CSS 적용범위, 명시도 or 구체성(CSS Specificity)</h1>
+      <hr />
+
+      <p>Universal Selector</p>
+      <p>타입 or 태그 선택자(Tag or Type Selector)</p>
+      <p class="class-selector">클래스 선택자(Class Selector)</p>
+      <p class="class-selector" id="id-selector">아이디 선택자(Id Selector)</p>
+      <p class="class-selector" id="id-selector" style="color: blue;">인라인 스타일(Inline style)</p>
+
+  </body>
+
+</html>
+```
+```css
+*{ /* 전체 선택자, Asterisk 기호 */
+    color: red;
+}
+
+/* 타입, 태그 선택자 */
+p{
+    font-size: 30px;
+    color: orange;
+}
+
+/* 클래스 선택자, .(dot)기호를 활용 */
+.class-selector{
+    color: aqua;
+}
+
+/* 아이디 선택자, #(hashtag) 기호 활용 */
+#id-selector{
+    color: green;
+}
+```  
+  
+  결과는 Inline style > Id Selector > Class Selector > Tag or Type Selector > Universal Selector 순이였다. 
+  이러한 명시도들을 확인 할 수 있는 사이트또한 따로 있었다.  [ 명시도 계산 ](https://specificity.keegan.st/)
+  
+* #### CSS 상속(CSS Inheritance)  
+
+  CSS 상속(CSS Inheritance)이란, CSS에도 다른 프로그래밍 언어들처럼 상속(Inheritance)이라는 개념이 있다. 하위 엘리먼트에서 어떤 CSS 속성을 명시하지 않은 경우, 기본적으로 상위 엘리먼트에 적용된 스타일이 하위 엘리먼트에도 적용되는 것을 뜻한다.  
+  마찬가지로 예제를 보며 이해해 보자.  
+    
+```html
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="inheritance.css" />
+      <title>CSS Inheritance</title>
+    </head>
+    <body>
+      <h1>CSS 상속(CSS Inheritance)</h1>
+      <hr />
+
+      <h2>
+        상속되는 속성 : 주로 font 관련 속성들이 상속됨(font-style, color,
+        text-align(정렬) 등)
+      </h2>
+      <div class="disney">
+        <div class="mickey">미키마우스</div>
+        <div class="mini">미니마우스</div>
+        <div class="donald">도날드덕</div>
+      </div>
+
+      <h2>상속되지 않는 속성 ex) border</h2>
+      <p>이 문단 내부에는 <em>강조된 텍스트</em>가 있습니다.</p>
+
+      <h2>강제 상속: inherit</h2>
+
+      <div id="sidebar">
+        <h3>sidebar text</h3>
+      </div>
+    </body>
+</html>
+```
+```css
+.disney {
+    color: firebrick;
+}
+
+p{
+    border: dashed 2px;
+}
+
+h3{
+    color: green;
+}
+
+#sidebar{
+    color: blue;
+}
+
+#sidebar h3 {
+    color: inherit; /* 강제로 상속 */
+}
+```  
+  
+  마찬가지로 예제를 실행해보니 이해가 쉬웠다.  
+  div로 만들어진 분류 아래에 있는 것들은 상위 폴더에 적용된 항목들이 하위 폴더에도 적용 되는 것을 칭한다라고 이해가 됐다.  
+  상속되는 속성은 주로 font 관련 속성들이 상속된다.(font-style, color, text-align(정렬) 등)  
+  상속되지 않는 속성도 존재하는데 ex)border 강제로 상속할 수 있는 방법또한 있다는 걸 알게 됐다. 강제 상속: inherit  
+    
