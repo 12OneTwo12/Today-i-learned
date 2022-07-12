@@ -27,4 +27,36 @@
   
 * #### CSS를 적용하는 방법  
   
+  CSS를 적용하는 방법에는 크게 3가지가 있다고 한다.  
+    
+      *   Inline Style 적용 방식  
+       
+      *   Internal Style 적용 방식  
+        
+      *   External Style 적용 방식  
+  
+  * #### Inline Style이란  
+  
+    
+      인라인 스타일이란 HTML 요소 내부에 style 속성을 사용하여 CSS 스타일을 적용하는 방법이다.  
+      간단한 예제를 봐서 이해해보자.  
+        
+      ```html
+        <html>
+          <body>
+            <h1 style="color:blue;">
+              이 문장은 Inline Style로 꾸며봤습니다.
+            </h1>
+          </body>
+        </html>
+      ```  
+        
+       실행해본 결과 글씨가 파란색으로 변했다.  
+       style이라고 하는 attribute를 지정하여 글씨의 색상을 파란색이라는 값(value)으로 바꾼 것이다.  
+       그러나 이번엔 간단한 코드 였기에 바로 가능했지만 문장이 여러개라면 어떻게 해야할까?  
+       매번 모든 태그들에 style을 지정해줘야 하는걸까?  
+       상상만 해도 여간 불편한게 아닐 것이다. 다른 방법이 없을까?  
+       
+  * #### Internal Style이란  
+  
   
