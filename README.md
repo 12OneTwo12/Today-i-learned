@@ -6,7 +6,7 @@
   
 ### Record
   
-* [[ 시작 ]( 2022-july-10 )]](https://github.com/12OneTwo12/TIL/blob/main/record/20220710.md)
+* [[ 시작 ] 2022-july-10 ](https://github.com/12OneTwo12/TIL/blob/main/record/20220710.md)
 
 ### Basic  
   
