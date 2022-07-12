@@ -628,5 +628,121 @@ tr, td{
         rem단위는 문서 전체의 기본값의 배수이므로, 문서 전체의 기준값에 따라 달라진다. 
         만약, 문서 전체의 기준값을 바꿔야 한다면, style에 :root{font-size:16px} 의 코드를 달아주시면 된다. 
         사이트 전체적으로 font-size를 조정해야 한다면 root의 속성값을 변경해주면 된다.  
+    
+    
+* #### HTML Element의 display 속성 2가지 : Block / Inline  
+
+    HTML에서 display에는 두 가지 속성이 있는데, Block과 Inline이다.  
+    block 속성은 무조건 한줄을 점유하고 있는 것을 말하며, 다음 태그는 무조건 줄바꿈이 적용된다. 대표적인 태그는 p와 div가 있다.  
+      
+    Inline의 대표적인 태그로는 span을 예로 들 수 있는데, text 크기만큼만 공간을 점유하고 줄바꿈을 하지 않는다.  
+      
+    ![image url](https://github.com/12OneTwo12/TIL/raw/main/Html/laknfglaknglvaekrf.png?raw=true)  
+      
+    이렇게 말이다.  
+        
+* #### CSS width / height    
+
+    width와 height 속성은 각각 가로 길이, 세로 길이를 의미한다.  
+    이는 다양하게 활용 될 수 있는데, 위에 말한 div, span에도 활용 될 수 있다.  
+    예제를 통해 쉽게 이해해보도록 하겠다.  
+      
+```html
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS width / height</title>
+    <link rel="stylesheet" href="width.css" />
+  </head>
+  <body>
+    <h1>CSS width / height</h1>
+    <hr />
+    <div class="width-default">
+      <h2>Default width of block / inline element</h2>
+      <div style="border: 2px dashed orange">
+        div block element이기 때문에 기본적으로 default width 100%를 가지고
+        있음.
+      </div>
+    </div>
+
+    <br />
+
+    <span style="border: 2px dashed brown"
+      >span은 inline element이기 때문에 자신의 영역 크기만큼만의 width가
+      지정되어 있음.(auto)
+    </span>
+
+    <br />
+    <div class="width-px">
+      <h2>width with px(pixel) units</h2>
+      <div style="border: 2px dashed orange">px이 적용된 block element.</div>
+      <br />
+      <a href="" style="border: 2px dashed brown"
+        >px이 적용된 inline element.</a
+      >
+    </div>
+
+    <div class="width-pct">
+      <h2>width with %(percent) units</h2>
+      <div style="border: 2px dashed orange">%가 적용된 block element.</div>
+      <br />
+      <span style="border: 2px dashed brown">%가 적용된 inline element.</span>
+    </div>
+    <div class="height-default">
+      div의 height는 기본 값(auto)으로 content 영역만큼의 크기를 가짐.
+  </div>
+
+  <br />
+  <div class="height-px">
+    <h2>height with px(pixel) units</h2>
+    <div>px이 적용된 block element.</div>
+  </div>
   
+  <br><br><br>
+  <div class="height-pct">
+    <h2>height with %(percent) units</h2>
+    <div>%가 적용된 div</div>
+  </div>
+  </body>
+</html>
+```  
+```css
+.width-default{
+    width:80%;
+    /* div의 블락은 기본이 100%인데 width를 이용해 길이를 조정 */
+}
+
+.width-px{
+    width: 300px;
+}
+
+.width-pct{
+    width:50%;
+}
+.height-default{
+    /* border: 2px solid greenyellow; */
+    border-width: 2px;
+    border-style: dashed;
+    border-color: greenyellow;
+}
+
+/* .height-px{
+    height: 300px; width: 70%;
+    border: 2px dashed skyblue;
+} */
+
+html, body{
+    /* height: 100%; */
+    height: 100vh;
+    /* viewport height의 줄임말 */
+}
+
+.height-pct{
+    border: 2px dashed tomato;
+    height: 50%;
+}
+```  
   
+    
