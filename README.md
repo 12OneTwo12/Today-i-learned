@@ -15,3 +15,7 @@
 ### HTML
 
 * [HTML](https://github.com/12OneTwo12/TIL/blob/main/Html/basic.md)
+  
+### CSS
+  
+* [ CSS란 무엇이고 어떻게 적용하는가 ](https://github.com/12OneTwo12/TIL/blob/main/CSS/readme.md)
