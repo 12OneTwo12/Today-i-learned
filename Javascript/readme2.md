@@ -123,4 +123,88 @@ allUsers = 5; // Uncaught TypeError: Assignment to constant variable.
             이와 같은 언어를 동적 타입 언어(dynamic typed language) 라고 한다.  
               
               
-   
+* ### Javascript 자료형(Javascript Data Types)  
+
+   Javascript의 데이터 타입에는 기본형, 문자형(String), 숫자형(Number), 논리형(Boolean), null, undefined, 심볼형(Symbol), 객체형이 있다.  
+    
+    * ##### 기본형  
+      
+          자바스크립트 자료형 중 가장 기본적인 값입니다.   
+          원시 자료형, 원시데이터라고도 하며 변경이 불가능한 값입니다.  
+            
+    * ##### 문자형(String)  
+
+          데이터를 '' (홑 따옴표, single quote) 또는 ""(쌍 따옴표, double quote) 안에 둘러싸인 문자들의 집합을 의미한다.     
+          숫자가 들어갈 경우도 이를 수가 아닌 텍스트로 인식한다.   
+            
+    * ##### 숫자형(Number)  
+  
+          숫자형 데이터를 의미하며, 숫자를 나타내거나 연산을 하는데 쓰이는 데이터 타입이다.   
+          정수나 실수를 기본하지 않고 통용해서 숫자를 처리합니다.  
+              
+    * ##### 논리형(Boolean)  
+
+          참과 거짓으로 표현되는 값이며, 2개 데이터를 비교시 사용할 수 있다.   
+          비교 연산자 등에 의해 참/거짓을 자동으로 판별할 수 있다.   
+          참, 거짓을 각각 직접 입력 가능하다.   
+            
+    * ##### null  
+
+          빈 값. (=변수가 참조하는 객체가 없음)  
+          기존에 정의한 변수 값을 초기화할때도 사용하는 데이터타입이다.  
+          undefined과 null의 차이점은, undefined는 정말 아무 데이터가 없을 때 표시하지만 null은 메모리 안에 null이라는 값이 저장된다.  
+            
+    * ##### undefined    
+
+          정의 되지 않았다는 것을 의미한다.  
+          값을 할당하지 않은 변수가 가지는 값이다. (=아직 값을 할당하지 않았음)  
+            
+    * ##### 심볼형(Symbol)  
+
+          유일하며 변경 불가능한 기본값을 만든다.   
+            
+    * ##### 객체형   
+
+          데이터와, 그 데이터에 관련한 절차, 방법, 기능 등의 동작을 모두 포함할 수 있다.  
+          함수 (Function) 배열 (Array) 날짜 (Date) 정규식 (RegExp) 등으로 여러 속성을  
+          하나의 변수에 저장할 수 있도록 해주는 데이터타입이다.  
+            
+  그렇다면 이제 간단히 그냥 한번 해보자.  
+    
+ ```javascript
+ let year = 2022;
+console.log(year);
+
+let grade = 4.5;
+console.log(grade);
+
+let greeting = '안녕하세요'; // ' ' (홑 따옴표, single quote)
+// ""(쌍 따옴표, double quote) 둘 다 가능
+
+let userName = "Jeong" ;
+
+console.log( "저는" + userName + "입니다" ); 
+// 문자열에 한해 + 연산 가능
+
+console.log(typeof true);
+console.log(true + false);
+
+console.log( "저는" + userName + "입니다" ); 
+console.log(``); // backtick 기호, 템플릿 리터럴 문법
+console.log(`저는 userName입니다`);
+console.log(`저는 ${userName} 입니다`);
+console.log('저는 ${userName}입니다');
+```  
+  
+  직접해보니 이해가 좀더 빨리 됐다.  
+  
+    * 템플릿 리터럴 문법(Template literals)
+       
+          템플릿 리터럴은 내장된 표현식을 허용하는 문자열 리터럴입니다. 
+          템플릿 리터럴은 표현식/문자열 삽입, 여러 줄 문자열, 문자열 형식화, 문자열 태깅 등 다양한 기능을 제공합니다.  
+          console.log(`이것이 ${이미 선언한 변수} 리터럴 문법입니다.`); -> 이런식으로 사용하면 된다.  
+            
+            
+            
+            
+  
