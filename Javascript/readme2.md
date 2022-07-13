@@ -207,9 +207,11 @@ console.log('저는 ${userName}입니다');
               
 
 * ### Javascript 연산자(Javascript operators)  
-
- 
   
+    연산자란 무엇인가? 주어진 식을 계산하여 결과를 얻어내는 과정을 연산이라고 하며, 연산을 수행하는 기호를 연산자라고 한다.  
+    연산자의 종류에는 다음과 같은 것들이 있다.  
+      
+    
     1. 산술 연산자(Unary operators)  
            
               +, -, /, *, %(나머지 연산), **(제곱)
@@ -304,4 +306,59 @@ yourAge += 1; // yourAge = yourAge + 1과 동일한 코드
 console.log(yourAge);
 ```  
   
+  예제와 결과를 비교하며 보니 그저 개념만 볼때보다 훨씬 이해가 된다.  
+    
+      
+* ### Javascript 조건문(Javascript Condition Statement)  
+  
+  조건문이란 프로그램 내에서 주어진 표현식의 결과에 따라 별도의 명령을 수행하도록 제어하는 실행문이다.  
+    
+  * #### if문  
+
+    조건문 중에서 가장 기본이 되는 실행문은 if 문이다.  
+    
+ ![image url](https://github.com/12OneTwo12/TIL/blob/main/Javascript/%EC%A0%9C%EB%AA%A9%20%EC%97%86112%EC%9D%8C.png?raw=true)  
+   
+    if 괄호 안에 있는 값이 ture라면 { 괄호 안에 있는 명령을 수행하라는 코드인것이다.  
+    거짓(false)이면 아무것도 실행하지 않는다.  
+    
+  * #### else문  
+
+    if 문과 같이 사용할 수 있는 else 문은 if 문의 표현식 결과가 거짓(false)일 때 주어진 실행문을 실행한다.  
+      
+  * #### else if문  
+  
+    else if 문은 if 문처럼 표현식을 설정할 수 있으므로, 중첩된 if 문을 좀 더 간결하게 표현할 수 있다.   
+    하나의 조건문 안에서 if 문과 else 문은 단 한 번만 사용될 수 있다.  
+    하지만 else if 문은 여러 번 사용되어 다양한 조건을 설정할 수 있다.
+  
+ ![image url](https://github.com/12OneTwo12/TIL/blob/main/Javascript/img_js_elseif.png?raw=true)  
+   
+  예제를 봐서 이해를 도와보자. 피카츄가 모험을 한다고 가정하자.  
+    
+```javascript
+if (monster === '리자몽'){
+    console.log('119 신고');
+} else if (monster === '거북왕') {
+    console.log('도망');
+} else { // else if는 if와 else 사이에만 작성 가능
+    console.log('백만 볼트');
+}
+```  
+  
+  피카츄가 다음과 같은 명령을 받은 상태라면, 리자몽을 만나게 된다면 119에 신고를 할것이고,  
+  거북왕을 만난다면 도망을 갈것이다. 그 외에 나머지 다른 포켓몬들과의 만남에서는 백만 볼트를 쓰게 될것이다.  
+  예제를 보니 이해가 쉬워졌다.  
+  
+* ### Javascript 반복문(Javascript Loops)  
+
+  반복문이란, 반복문이란 프로그램 내에서 똑같은 명령을 일정 횟수만큼 반복하여 수행하도록 제어하는 실행문이다.  
+  프로그램이 처리하는 대부분의 코드는 반복적인 형태가 많으므로, 가장 많이 사용되는 실행문 중 하나이다.   
+    
+   * #### 반복문의 구조  
+
+    ![image url](https://github.com/12OneTwo12/TIL/blob/main/Javascript/%EB%B0%98%EB%B3%B5%EB%AC%B8.png?raw=true)  
+      
+  조건을 만족하는 동안 반복하는 구조를 만들때 사용한다.  
+  자주쓰이니 정확하게 숙지하도록 해야겠다.  
   
