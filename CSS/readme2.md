@@ -1019,4 +1019,83 @@ img{
 </html>
 ```  
   
-  위 문서를 실행해보니 
+ ![image url](https://github.com/12OneTwo12/TIL/blob/main/CSS/123123.png?raw=true)  
+    
+  위 예제를 실행해보니 결과가 이렇다. 사진으로 인해 텍스트 공간이 많이 남아서 내눈에는 썩 좋아보이지 않는다.  
+  텍스트를 사진 옆으로 갈 수 있게 만들고 싶어 간단하게 css를 이용해 만들어 봤다.  
+    
+```css
+.img1{
+    float: left;
+    margin: 0px 10px;
+}
+```  
+  그 결과는 이렇다.  
+    
+ ![image url](https://github.com/12OneTwo12/TIL/blob/main/CSS/123123141414.png?raw=true)  
+   
+  이렇게 float를 이용해 만족스러운 결과를 얻을 수 있었다.  
+    
+ * ### Reset  
+
+  css reset이란, 우리가 html로 코드를 작성하고 브라우저로 실행을 해보면 내가 적용을 하지 않았는데도 자동으로 margin이 들어간 경우를 흔히 봤을 것이다.   
+  이는 브라우저마다 default 값으로 스타일이 적용되어 있기 때문에 브라우저마다의 기본 디폴트 스타일 값이 아니라    
+  동일한 CSS 스타일을 보여주기 위해이런 default 디폴트 값을 초기화 해주어야 한다.  
+  굉장히 많은 사람들이 자주 사용하기 때문에 따로 reset 코드가 공유 되고 있다.  
+  
+```css
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* 사람들이 많이 써서 이렇게 리셋을 만들어 둔 css도 존재 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+```  
+  
+  
+  
+
