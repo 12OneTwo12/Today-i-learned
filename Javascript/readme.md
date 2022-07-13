@@ -37,4 +37,4 @@
     
 ![image url](https://camo.githubusercontent.com/dc89c276d4c0a366820a933a9f0c5bcb8d7f06c42bb2501927250f2462c12742/68747470733a2f2f646b726e34736b30726e3331762e636c6f756466726f6e742e6e65742f323031382f30332f30313133333932352f6a6176617363726970742e706e67)
 
-* #### [ 이어서 보기 ](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme2.md)
+* #### 이어서 보기 [ Link ](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme2.md)
