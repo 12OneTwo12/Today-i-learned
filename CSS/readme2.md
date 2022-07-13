@@ -829,3 +829,113 @@ padding=안쪽여백 */
 }
 ```  
   
+  
+* #### Display 예제  
+
+   이제 간단한 몇가지 display를 실험 해볼만한 예제를 만들어 보았다.  
+    
+```html
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="display.css">
+</head>
+<body>
+    <div class="cards">
+        <div class="card">
+            <img src="https://placeimg.com/1000/1000/animals" alt="animal">
+            <div class="container">
+                <h4>First card</h4>
+                <p>My pet</p>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img src="https://placeimg.com/1000/1000/nature" alt="animal">
+            <div class="container">
+                <h4>Second card</h4>
+                <p>My Country</p>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img src="https://placeimg.com/1000/1000/nature" alt="animal">
+            <div class="container">
+                <h4>Third card</h4>
+                <p>My Home</p>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img src="https://placeimg.com/1000/1000/nature" alt="animal">
+            <div class="container">
+                <h4>Third card</h4>
+                <p>My Phone</p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>  
+```  
+  
+  이로써 cards라는 class 안에 담긴 card 들이 생기게 됐다.
+  각각의 card들은 사진과 간단한 정보가 담기게 됐는데 이 문서에 아주 간단한 이벤트를 넣어 주려 한다.  
+    
+```css
+.card{
+    width:23%;
+    margin-left:20px;
+    margin-bottom: 20px;
+    border: 2px dashed grey;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    flex-direction: column-reverse;
+    float: left;
+  }
+
+.card:hover{/* 가상클래스, 마우스 올렸을 때 */
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.8);
+    
+    }
+
+img{
+    width: 100%;
+  }
+
+.container{
+    padding: 10px 9px 8px 7px; 
+    padding: 2px 16px; 
+  }  
+```  
+  
+  hover를 이용하여 마우스를 박스 위로 올린다는 이벤트가 생겼을 때  
+  그림자를 더 어둡게 반응하도록 해서 유저가 조금 더 생동감 있는 모습을 볼 수 있게 만들었다.  
+  간단한 방법으로 무언가 만들어 냈다는 게 신기하고 재미있다.  
+  몇 가지 더 살펴 보려하는데.  
+    
+  * ##### display:none 과 visibility:hidden
+        
+ 둘 다 화면에 보이지 않게 하는 것은 같으나 차이점이 존재했다.  
+    
+      display:none은 아예 사라지게 해서, 보이지도 않고 원래 있던 해당 공간에서도 존재하지 않게 되어 block과는 반대되는 개념으로 이해하게 됐다.    
+      visibility:hidden은 보이지는 않지만 해당 공간에는 존재했고, width와 height값을 주었다면 그만큼 공간은 존재하게 되었다.  
+        
+  * ##### 박스의 크기를 상하좌우 따로 조절 하는 법  
+
+      박스의 크기를 상하좌우 따로 조절하는 법또한 간단했다.  
+```css
+.container{
+    padding: 10px 9px 8px 7px; /* 시계방향으로 각각 위(10px) 오른쪽(9px) 아래(8px) 왼쪽(7px) */
+    padding: 2px 16px; /* 상하(2px), 좌우(16px) */
+}
+```  
+  
+
