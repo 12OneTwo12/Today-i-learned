@@ -20,3 +20,9 @@
   
 * [[ CSS란 무엇이고 어떻게 적용하는가 ]](https://github.com/12OneTwo12/TIL/blob/main/CSS/readme.md)
 * [[ CSS에 대해 조금 더 세부적으로 알아보자 ]](https://github.com/12OneTwo12/TIL/blob/main/CSS/readme2.md)  
+  
+### Javascript  
+  
+* [[ Javascript란 무엇인가 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme.md)  
+* [[ Javascript 더 자세히 알아보자 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme2.md)  
+  
