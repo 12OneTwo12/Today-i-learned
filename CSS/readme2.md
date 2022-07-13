@@ -13,6 +13,11 @@
   * #### [[ HTML Element의 display 속성 2가지 ]](#html-element의-display-속성-2가지)    
   * #### [[ width와 height ]](#width와-height)  
   * #### [[ 박스 모델(CSS Box model) ]](#박스-모델css-box-model)  
+  * #### [[ Display 예제 ]](#Display-예제)
+  * #### [[ Display none 과 Visibility hidden ]](#display-none-과-visibility-hidden)
+  * #### [[ Position ]](#position)
+  * #### [[ Float & Float layout ]](#float-&-float-layout)
+  * #### [[ Reset ]](#reset)
 -----------------------------------------------------------------------------------------------------------------------------------------
       
         
@@ -921,7 +926,7 @@ img{
   간단한 방법으로 무언가 만들어 냈다는 게 신기하고 재미있다.  
   몇 가지 더 살펴 보려하는데.  
     
-  * ##### display:none 과 visibility:hidden
+  * ##### Display none 과 Visibility hidden
         
  둘 다 화면에 보이지 않게 하는 것은 같으나 차이점이 존재했다.  
     
@@ -938,7 +943,7 @@ img{
 }
 ```  
   
-* ### position  
+* ### Position  
 
   position이란 말 그대로 위치를 의미하는데 css에서도 HTML 문서 상에 요소가 배치되는 방식을 결정한다.  
   요소의 정확한 위치 지정을 위해서 top, left, bottom, right 속성과 함께 사용되는데,  
