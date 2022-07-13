@@ -208,26 +208,34 @@ console.log('저는 ${userName}입니다');
 
 * ### Javascript 연산자(Javascript operators)  
   
-    <h2>1. 산술 연산자(Unary operators)</h2>
-    <p>+, -, /, *, %(나머지 연산), **(제곱)</p>
+    1. 산술 연산자(Unary operators)  
+           
+              +, -, /, *, %(나머지 연산), **(제곱)
+  
+    2. 증감 연산자(Increment and decrement)  
 
-    <h2>2. 증감 연산자(Increment and decrement)</h2>
-    <p>age++, age--, ++age, --age</p>
+              age++, age--, ++age, --age
+  
+    3. 관계 연산자(Relational operators)  
+      
+              <, >, <=, >=
+  
+    4. 동등 연산자(Equality operators)  
+      
+              ==, !=, ===, !==
+              == vs === ?
+    
+    5. 논리 연산자(Logical operators)  
+      
+              &&, ||
+  
+    6. 삼항 연산자(Conditional ternary operators)  
+      
+              (condition ? ifTrue : ifFalse)
 
-    <h2>3. 관계 연산자(Relational operators)</h2>
-    <p><, >, <=, >=</p>
-
-    <h2>4. 동등 연산자(Equality operators)</h2>
-    <p>==, !=, ===, !==</p>
-    <p>== vs === ?</p>
-
-    <h2>5. 논리 연산자(Logical operators)</h2>
-    <p>&&, ||</p>
-
-    <h2>6. 삼항 연산자(Conditional ternary operators)</h2>
-    (condition ? ifTrue : ifFalse)
-
-    <h2>7. 할당 연산자(Assignment operators)</h2
+    7. 할당 연산자(Assignment operators)  
+      
+              =, +=, -=, *=, /=, %=
   
             
   
