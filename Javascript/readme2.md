@@ -198,13 +198,36 @@ console.log('저는 ${userName}입니다');
   
   직접해보니 이해가 좀더 빨리 됐다.  
   
-    * 템플릿 리터럴 문법(Template literals)
+  * 템플릿 리터럴 문법(Template literals)
        
           템플릿 리터럴은 내장된 표현식을 허용하는 문자열 리터럴입니다. 
           템플릿 리터럴은 표현식/문자열 삽입, 여러 줄 문자열, 문자열 형식화, 문자열 태깅 등 다양한 기능을 제공합니다.  
           console.log(`이것이 ${이미 선언한 변수} 리터럴 문법입니다.`); -> 이런식으로 사용하면 된다.  
             
-            
-            
+              
+
+* ### Javascript 연산자(Javascript operators)  
+  
+    <h2>1. 산술 연산자(Unary operators)</h2>
+    <p>+, -, /, *, %(나머지 연산), **(제곱)</p>
+
+    <h2>2. 증감 연산자(Increment and decrement)</h2>
+    <p>age++, age--, ++age, --age</p>
+
+    <h2>3. 관계 연산자(Relational operators)</h2>
+    <p><, >, <=, >=</p>
+
+    <h2>4. 동등 연산자(Equality operators)</h2>
+    <p>==, !=, ===, !==</p>
+    <p>== vs === ?</p>
+
+    <h2>5. 논리 연산자(Logical operators)</h2>
+    <p>&&, ||</p>
+
+    <h2>6. 삼항 연산자(Conditional ternary operators)</h2>
+    (condition ? ifTrue : ifFalse)
+
+    <h2>7. 할당 연산자(Assignment operators)</h2
+  
             
   
