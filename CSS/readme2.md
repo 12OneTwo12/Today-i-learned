@@ -938,4 +938,85 @@ img{
 }
 ```  
   
+* ### position  
 
+  position이란 말 그대로 위치를 의미하는데 css에서도 HTML 문서 상에 요소가 배치되는 방식을 결정한다.  
+  요소의 정확한 위치 지정을 위해서 top, left, bottom, right 속성과 함께 사용되는데,  
+  포지션 속성의 속성값은 static, relative, absolute, fixed 총 4가지가 있다.  
+    
+    * ##### Static  
+  
+          나는 Static을 쉽게 기본값으로 이해했다.  
+          position 속성을 별도로 지정해주지 않으면 기본값인 static이 적용된다.  
+          position 속성이 static인 요소는 HTML 문서 상에서 원래 있어야하는 위치에 배치된다.  
+        
+    * ##### relative  
+
+          속성을 갖는 element들은 원래 기본적인 포지션에서 상대적인 포지션을 가질 수 있게 해준다.  
+          위에서 언급했던 top, left, bottom, right를 이용해 원래의 위치에서 상대적인 위치를 지정해 줄 수 있다.  
+          여기서 말하는 원래 위치는 라는 것은 static일때의 위치를 말한다.  
+          요소를 원래 위치를 기준으로 상대적(relative)으로 배치해준다고 생각하시면 이해가 쉬울 것 같다고 하는데,  
+          솔직히 아직까지 정확하게 이해하진 못했다.  
+        
+    * ##### absolute  
+    
+          position 속성이 absolute일 때 해당 요소는 배치 기준을 자신이 아닌 상위 요소에서 찾는다.  
+          DOM 트리를 따라 올라가다가 position 속성이 static이 아닌 첫 번째 상위 요소가 해당 요소의 배치 기준으로 설정된다.   
+          만약에 해당 요소 상위에 position 속성이 static이 아닌 요소가 없다면, DOM 트리에 최상위에 있는 body 요소가 배치 기준이 된다.  
+        
+    * ##### fixed  
+  
+          쉽게 이해하자면 web site를 돌아보다가,  
+          화면을 위아래로 스크롤하더라도 브라우저 화면의 특정 부분에 고정되어 움직이지 않는 UI를 본적이 있을 것 이다.  
+          광고나 검색창 정도를 떠올리면 좋을 것 같은데,  
+          position 속성을 fixed로 지정하면 이렇게 요소를 항상 고정된(fixed) 위치에 배치할 수 있다.  
+        
+ * ### Float & Float layout  
+
+  CSS float 속성은 레이아웃 설계하는 과정에서 많이 사용하는 속성이라고 한다.  
+  레이아웃을 구성하는데 필요한 핵심 속성으로 특정 요소를 떠있게, 흐르도록, 부유하게 하도록 하는 속성이다.  
+  float 속성을 사용해 박스를 왼쪽 또는 오른쪽으로 "부유"시키는 레이아웃 기법이라고 하는데,  
+  그렇다면 레이아웃은 무엇일까?  
+     
+      * Layout  
+         
+            CSS에서 layout이란, 다양한 요소들을 적절한 위치에 배치하고 정렬할 수 있도록 하는 기능을 말한다.  
+              
+  나는 간단하게 사진이나 문서 배치를 마음대로 할 수 있게 해주는 친구구나 하고 이해하게 됐다.  
+  마찬가지로 간단한 예제를 통해 이해해 보자  
+  
+```html
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="float.css" />
+    <title>CSS Float & Float layout</title>
+  </head>
+  <body>
+    <h1>CSS Float & Float layout</h1>
+    <hr />
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quae
+      explicabo similique quibusdam nesciunt ullam animi excepturi eum harum
+      consequuntur.
+    </p>
+
+    <p>
+        <img class="img1" src="https://placeimg.com/300/300/animals" alt="" />
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ab
+      harum quam accusantium libero ipsum blanditiis quod sunt recusandae
+      consectetur inventore accusamus unde eius, officia soluta quos architecto
+      doloribus cupiditate aliquam aperiam atque exercitationem molestias
+      quisquam. Sed officiis, saepe sunt consectetur asperiores sint ullam sequi
+      consequatur adipisci enim laudantium! Incidunt.
+    </p>
+
+    <a href="https://css-tricks.com/all-about-floats/">Ref</a>
+  </body>
+</html>
+```  
+  
+  위 문서를 실행해보니 
