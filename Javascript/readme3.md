@@ -96,7 +96,7 @@
      
   * #### 함수의 선언  
 
-    함수의 선언을 위해서는 Keyword, name, paramenter, body 필요하다.  
+    함수의 선언을 위해서는 Keyword, name, parameter, body 필요하다.  
     함수를 선언하는 방법에는 몇 가지가 있는데.  
     아래 예제처럼 선언하는 방식을 [함수 선언식] 이라고 한다.  
       
@@ -110,7 +110,13 @@
       // Body       -> {}
       ```  
         
-        
+    그렇다면 파라미터(parameter)란 무엇일까?  
+      
+        매개변수(parameter)란 함수의 정의에서 전달받은 인수를 함수 내부로 전달하기 위해 사용하는 변수를 의미합니다.
+        인수(argument)란 함수가 호출될 때 함수로 값을 전달해주는 값을 말합니다.  
+          
+    나는 쉽게 우리가 함수를 사용할때 ()들어가는 변수들을 매개변수(parameter)로 이해했다.  
+      
   * #### 함수의 특징  
    
     함수에는 몇 가지 특징이 있는데, 함수는 function 키워드로 시작하고, 실제로는 객체이다.  
@@ -203,4 +209,159 @@
     console.log(greeting()); // console.log('Hello'); 와 같다.
     ```  
       
+      
+* ### Javascript 콜백(Javascript callback)  
+
+    Callback이란, 어떤 함수의 인자값(argument)으로 보내지는 함수로써, 무언가(event)가 발생했을 때(어떤 함수의 호출) 실행(호출)되는 함수를 말한다.  
+    조금 더 쉽게 설명하자면 파라미터로 함수를 전달받아, 함수의 내부에서 실행하는 함수이다.  
+    예제를 살펴보며 이해를 도와보자.  
+      
+    ```javascript
+    // 콜백 함수 - 기본
+    function greeting(name) {
+        console.log(`Hello ${name}`);
+    }
+
+    function userInput(myName, callbackFn){
+        callbackFn(myName); // greeting("Jeong");과 같음.
+    }
+
+    // userInput함수의 인자값으로 greeting 함수를 전달
+    userInput('Jeong', greeting);
+    ```
+      
+    이해하기 위해 예제를 천천히 봐보자.    
+    예제 마지막 줄을 보면, userInput이라는 함수의 첫번 째 인자값으로 'Jeong'을 넣었고,  
+    두번 째 인자값으로 greeting이라고 하는 함수를 넣게됐는데. 그렇다면 userInput이라고 하는 함수는 어떤 명령을 수행하는 함수인지 보자. 
+    userInput이라는 함수는 myName이라는 매개변수(parameter)와 callbackFn이라고 하는 매개변수(parameter)를 가지고 있는데.  
+    첫번 째 인자값으로 들어간 'Jeong'이라는 문자열이 myName이라고 하는 매개변수에 할당되고,  
+    두번 째 인자값으로 들어간 greeting이라고 하는 함수가 callbackFn이라고 하는 매개변수에 할당된다.  
+    그렇게 되면 이제 greeting이라는 함수는 무슨 행동을 하는지 살펴봐야하는데,  
+    callbackFn안에 담긴 함수 greeting은 name이라는 매개변수가 주어졌을때, 'Hello ${name}'이라는 문자열을 내보내게 되는데,  
+    userInput이라는 함수 body 안에서 callbackFn(myName)이라는 코드를 통해 코드 마지막줄에서 첫번 째로 주어진 인자값 'Jeong'이  
+    myName으로 전달, 이는 곧 callbackFn(myName)의 파라미터로 전달되며 이것이 greeting의 파라미터, 즉 name이라는 파라미터의 값이 된다.  
+    즉 결과는 'Hello Jeong'이 출력된다.  
+    처음에는 상당히 이해하기 어려운 개념이였다.  
+    설명하는 지금도 나에게는 이해가 덜되고 어려운 개념이다. 간단하게 순서를 그려보자면  
+      
+         userInput('Jeong', greeting); -> callbackFn('Jeong') -> greeting('Jeong') -> console.log(`Hello ${'Jeong'}`); -> 출력  
+           
+    이렇다고 볼 수 있을 것 같다.  
+      
+ * ### addEventListener  
+
+    이벤트 리스너는 DOM 객체에서 이벤트가 발생할 경우 해당 이벤트 처리 핸들러를 추가할 수 있는 오브젝트이다.  
+    이벤트 리스너를 이용하면 특정 DOM에 위에 말한 Javascirpt 이벤트가 발생할 때 특정 함수를 호출한다.  
+    작성된 이벤트 리스너는 먼저 해당 객체나 요소에 등록되어야만 호출될 수 있다.  
+    객체나 요소의 메소드에 이벤트 리스너를 전달할 때는 다음 메소드를 사용할 수 있다.  
+      
+        대상객체.addEventListener(이벤트명, 실행할이벤트리스너, 이벤트전파방식)  
+          
+    예문으로 이해해보자.  
+      
+    ```javascript
+    const button = document.querySelector('button');
+
+    button.addEventListener('click', ()=>{console.log('button cliked!');})
     
+    // 버튼을 마우스로 클릭하는 클릭('click') 이벤트가 발생하였을 때
+    // 'button cliked!'가 출력되도록 구현
+    ```  
+      
+    이렇게하면 button을 클릭할때마다 console.log('button cliked!') 코드가 실행되는 것이다.  
+    이를 통해 다양하게 활용할 수 있겠다 싶었다.  
+      
+    그렇다면 querySelector무엇일까?  
+      
+          기본형태 : element = baseElement.querySelector(selectors);element = baseElement.querySelector(selectors);  
+          querySelector() 를 사용하여 html의 태그와 class, id 모두 JavaScript에 가져오는 역활을 하는 녀석이다.  
+          이로 인해 html 요소들을 JavaScript에서 변경할 수 있다.  
+            
+    예제  
+      
+    ```javascript
+    const myDiv = document.querySelector(".test"),
+        myH1 = myDiv.querySelector("h1");
+
+    console.log(myDiv);
+    console.log(myH1);
+    ```
+      
+    js 에서 html의 엘리먼트를 갖고와서 html을 컨트롤 할 수 있다.  
+    h1을 갖고 올 때는 myDiv 자손 엘리먼트 중 h1을 갖고 온다.  
+    html 문서를 만들고 로그를 확인 해보도록 하자.
+      
+      
+ * ### Javascript 배열(Javascript Array)  
+
+    배열이란, 연관된 데이터를 모아서 관리하기 위해서 사용되는 데이터 타입이다.  
+    변수가 하나의 데이터를 저장하기 위한 것이라면 배열은 여러 개의 데이터를 저장하기 위한 것이라고 할 수 있다.  
+      
+          배열 작성 방식 : const someting = [ element, element, element, element, ··· ];  
+          element : 배열에 들어갈 요소들(Html의 element가 아님)  
+            
+      ```javascript
+      const nothing = [];     // [] 배열을 arr이라는 변수에 할당(저장), [] -> 빈 배열  
+      const arr = ['나','너','그리고','우리',2,3,7];  
+      ```  
+          
+     * 배열의 출력 방법
+
+        ```javascript
+        console.log(arr);         // 배열 전부를 출력
+        console.log(arr[0]);      // 배열 중에 첫 번째 요소 출력 
+        console.log(arr[2]);      // 배열 중에 세 번째 요소 출력
+        console.log(arr.length);  // length는 배열의 길이를 의미, 배열의 길이를 출력  
+        ```  
+          
+        배열의 요소를 호출할때는 0번 부터 시작한다.  
+          
+        ![image url](https://github.com/12OneTwo12/TIL/blob/main/Javascript/123123124151515161.png?raw=true)  
+          
+     * 배열 요소들의 관리  
+
+        배열 요소들을 관리하는 방법은 다음과 같다.  
+  
+        ```javascript
+        // 요소의 조회(참조)
+        console.log(`${arr[0]},${arr[4]}`);
+
+        // 요소의 추가
+        // 변수명 [추가할 인덱스 번호, 위치] = 할당할 값(리터럴)
+        arr[7] = 'new cookie';
+        console.log(arr);
+
+        const melonCookie = 'melon cookie';
+        arr[8] = melonCookie; // 변수로도 할당 가능
+        console.log(arr);
+
+        // 요소의 갱신(update)
+        arr[7] = 5;
+        console.log(arr);
+
+        // 요소의 삭제
+        const fruits = ['apple','orange','kiwi'];
+        // 1. fruit
+        // 2. fruits
+
+        console.log(fruits);
+        delete fruits[1]; // 삭제, 희소배열이 만들어지기 때문에 비추
+        console.log(fruits); // empty같이 요소의 실제 값은 없지만, 공간은 유지된 형태
+        console.log(fruits[1]); // undefined
+        console.log(fruits.length); 
+
+        const nuts = ['walnut','almond','pinenut'];
+        nuts.splice(1,1); // () 보고 함수인가보다 생각해야함, 배열의 요소를 수정할 수 있는 splice라는 프로퍼티를 사용 // 1번인덱스 삭제
+        // ex.  pikachu.attack(); // console.log('백만 볼트!');
+        console.log(nuts);
+        console.log(nuts.length);
+
+        nuts.splice(1,0,'nie'); // 1번 인덱스에 nie 추가
+        console.log(nuts);
+
+        const new = [3,4,5,6,7,8,9];
+        neww.splice(3,2); // 3번 인덱스부터 2개 삭제       
+        ```  
+          
+          
+       
