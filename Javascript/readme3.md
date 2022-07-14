@@ -128,10 +128,25 @@
       
     이렇게 선언하는 방식을 [함수 표현식]이라고 한다.  
       
-  * #### ES6 문법, 화살표 함수(Arrow function)  
+  * #### 즉시 실행 함수(Immediately-invoked function expression)  
+
+    함수 정의와 동싱에 실행되는 함수, 한 번만 실행되고 다시 호출 불가하다.  
+    마찬가지로 즉시 실행 함수도 함수이기 때문에, 변수에 즉시 실행 함수의 리턴 값 저장도 가능하다.  
+  
+    ```javascript
+    const res = (function () {
+    const a = 5;
+    const b = 10;
+    return a*b;
+    }());
+    ```
+
+* ### 화살표 함수(Arrow function)  
     
-    함수를 선언하는 세 번째 방법인 화살표 함수에 대해 알아보자.  
+    함수를 선언하는 또 하나의 방법인 화살표 함수에 대해 알아보자.  
+    2015년에 발표된 ECMAScript에 arrow function가 추가됐는데.  
     우선 ES6 문법이란 전에 한번 알아봤던 ECMAScript의 약자이며 자바스크립트의 표준, 규격을 나타내는 용어이다.  
+    익명함수 표현식을 작성하는 새로운 방법이고,  
     function 키워드 대신 화살표(arrow)를 사용하여 좀 더 간략하게 표현하는 문법인데, 기본 형태는 다음과 같다.  
       
          () => {};  
@@ -150,16 +165,42 @@
       
         ex) const greeting = () => console.log('안녕하세요');  
           
-  * #### 즉시 실행 함수(Immediately-invoked function expression)  
-
-    함수 정의와 동싱에 실행되는 함수, 한 번만 실행되고 다시 호출 불가하다.  
-    마찬가지로 즉시 실행 함수도 함수이기 때문에, 변수에 즉시 실행 함수의 리턴 값 저장도 가능하다.  
-  
+    같은 목표를 가진 코드를 여러 선언 방법으로 비교해보자.  
+      
     ```javascript
-    const res = (function () {
-    const a = 5;
-    const b = 10;
-    return a*b;
-    }());
-    ```
+    // 두 수의 합을 구하는 함수 sum
+    // 1. 함수 선언문 방식
+    function sum(a,b){
+       return a+b;
+    }
 
+    // 2. 함수 표현식
+    const sum = function (a,b){
+        return a+b;
+    }
+
+    // 3. 화살표 함수
+    const sum = (a,b) => a+b;
+    ```  
+      
+    같은 목표를 가진 코드라면 아무래도 화살표 함수를 이용하는게 짧게 끝날 수 있을 것 같다.  
+    화살표 함수의 특징은 암묵적인 return이 가능하다는 것과 기존의 함수는 { } 를 사용하고, return 키워드를 줬지만,  
+    화살표 함수는 둘 다 사용하지 않음 ( 코드가 여러 줄일 경우에는 예외 )  
+      
+    ```javascript
+    // body 부분이 2줄 이상일 경우 { } 및 return 키워드를 추가해야함
+    const sub = (a,b) => {
+        console.log('뺄셈입니다.');
+        return a-b;
+    }
+
+    // 파라미터가 1개일 경우에는 () 생략 가능.
+    const square = x => x * x;
+    console.log(square(10)); // 100
+
+    // 파라미터가 없는 경우에는 ()는 필수
+    const greeting = () => 'Hello';
+    console.log(greeting()); // console.log('Hello'); 와 같다.
+    ```  
+      
+    
