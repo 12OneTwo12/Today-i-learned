@@ -140,4 +140,45 @@
   따라서 최소값을 지정할 때에는 최대값에도 피해가 가지 않도록 셋팅이 필요하다.    
   0 ~ 1 → 양변에 10을 곱하면, 0 ~ 10으로 최대값만 변함  
   0 ~ 1 → 양변에 1을 더하면, 1 ~ 2로 최소값과 최대값이 모두 변함  
-  
+  이러한 이유들로  Math.floor(Math.random() * (max - min + 1)) + min; 이런 코드가 나온 것이다.  
+    
+  그럼 let randomRGBArray = []; 배열에 무작위 숫자 3개를 집어 넣는것을 성공했다.  
+  이제 버튼을 클릭했을때, 배경 색상을 변경하면서 변경한 색상의 rgb 값을 화면에 출력해주면 된다.  
+  어떻게 하면 될까?  
+    
+  먼저 html 문서에 id와 class값을 준다.  
+  ```html
+    <main> <!-- semantic tag -->
+        <div class="container">
+            <h2>Background color : <span class="color">rgb(255, 255, 255)</span> </h2>
+            <button id="btn">Click Me!</button>
+        </div>
+    </main>
+  ```  
+    
+  그 후 각각 getElementById와 querySelector를 이용했다.  
+    
+  ```javascript
+  const btn = document.getElementById('btn');
+
+  const color = document.querySelector('.color');
+
+  btn.addEventListener('click', () => {
+    const [r, g, b] = getRandomNumber(0,255);
+    const rgbs = `rgb(${r},${g},${b})`
+    document.body.style.backgroundColor = rgbs;
+    color.textContent = rgbs;
+    color.style.color = rgbs;
+    });
+  ```  
+      
+  이렇게 되면 btn이라는 id를 가진 ```<button id="btn">Click Me!</button>``` 코드가 btn이라는 변수로 할당되고,  
+  color라는 class를 가진 ```<span class="color">rgb(255, 255, 255)</span>``` 코드가 color라는 변수로 할당된다.  
+  이후 btn.addEventListener를 통해 변수 btn 에서 'click' 클릭이라는 이벤트가 발생하면 두번째 파라미터에 있는 함수가 실행되는 것이다.  
+  위에서 선언했던 getRandomNumber라는 함수의 파라미터 값으로 0,255를 넣은 결과를 문자열 각각 r, g, b에 할당했고,  
+  각각 값이 할당된 r, g, b를 변수 rgbs에 담았다.  
+  그 이후 각각의 코드들로 ```document.body.style.backgroundColor = rgbs;```를 통해 배경색을  
+  ```color.textContent = rgbs;```를 통해 화면에 출력되는 텍스트를,  
+  ```color.style.color = rgbs;```를 통해 화면에 출력되는 텍스트의 색을 각각 바꿔줬다.  
+  이는 rgb라는 동일한 변수로 처리되기때문에 같은 색으로 출력이 가능하게 된다.  
+  이로써 처음 목표로 했던 웹을 성공적으로 만들수 있었다.  
