@@ -31,7 +31,7 @@
       이 브라우저 객체 모델(BOM)을 이용해서 Browser와 관련된 기능들을 구성한다. DOM은 이 BOM  중의 하나이다.   
       브라우저 객체 모델(BOM)의 최상위 객체는 window라는 객체이다. DOM은 이 window 객체의 하위 객체이기도 하다.  
         
-  ![image url}(https://github.com/12OneTwo12/TIL/blob/main/Javascript/1_5IGcw4wzFutYn82PePUNag.jpg?raw=true)  
+  ![image url](https://github.com/12OneTwo12/TIL/blob/main/Javascript/1_5IGcw4wzFutYn82PePUNag.jpg?raw=true)  
     
   문서 객체란 것이 무엇일까? 문서 객체란 html이나 body같은 html문서의 태그들을 JavaScript가 이용할 수 있는 객체(object)로 만들면 그것을 문서 객체라고 한다.   
   DOM은 넓은 의미로 웹 브라우저가 HTML 페이지를 인식하는 방식을 의미한다. 조금 좁은 의미로 본다면 document 객체와 관련된 객체의 집합을 의미할 수도 있다.  
