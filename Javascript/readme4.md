@@ -29,7 +29,23 @@
         
   ![image url}(https://github.com/12OneTwo12/TIL/blob/main/Javascript/1_5IGcw4wzFutYn82PePUNag.jpg?raw=true)  
     
-  문서 객체란 것이 무엇일까? 문서 객체란 html이나 body같은 html문서의 태그들을 JavaScript가 이용할 수 있는 객체(object)로 만들면 그것을 문서 객체라고 한다.  
-  DOM은 넓은 의미로 웹 브라우저가 HTML 페이지를 인식하는 방식을 의미한다. 조금 좁은 의미로 본다면 document 객체와 관련된 객체의 집합을 의미할 수도 있다.
-  이제 DOM을 보게 되면 웹 브라우저가 html 페이지를 인식하는 방식을 이야기 하거나 문서 객체(document object)와 
-  관련된 객체의 집합에 관한 이야기라는 것을 쉽게 추측할 수 있습니다.
+  문서 객체란 것이 무엇일까? 문서 객체란 html이나 body같은 html문서의 태그들을 JavaScript가 이용할 수 있는 객체(object)로 만들면 그것을 문서 객체라고 한다.   
+  DOM은 넓은 의미로 웹 브라우저가 HTML 페이지를 인식하는 방식을 의미한다. 조금 좁은 의미로 본다면 document 객체와 관련된 객체의 집합을 의미할 수도 있다.  
+  이제 DOM을 보게 되면 웹 브라우저가 html 페이지를 인식하는 방식을 이야기 하거나 문서 객체(document object)와  
+  관련된 객체의 집합에 관한 이야기라는 것을 쉽게 추측할 수 있다.  
+    
+* ### node란 무엇인가?  
+  
+  HTML문서에 관한 모든 것을 담고 있는, 계층적 정보 단위를 말한다.  
+  HTML DOM은 노드(node)라고 불리는 계층적 단위에 정보를 저장하고 있다.  
+  HTML DOM은 이러한 노드들을 정의하고, 그들 사이의 관계를 설명해준다.  
+  아래 사진을 보며 조금 더 이해해보자.  
+     
+  ![image url](https://github.com/12OneTwo12/TIL/blob/main/Javascript/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C1515151515151551%20(2).png?raw=true)  
+    
+  element들은 전부 node인데, node는 element node와 text node로 이루어져있다고 보면 된다.  
+  element node는 html이나 body,div,h1 이런것들을 의미하고 text node는 그 외 모든 텍스트를 의미한다고 보면 된다.  
+    
+* ### Javascript Web_API
+
+  API란 무엇일까, API란 Application Programming Interface(애플리케이션 프로그램 인터페이스)의 줄임말입니다.
