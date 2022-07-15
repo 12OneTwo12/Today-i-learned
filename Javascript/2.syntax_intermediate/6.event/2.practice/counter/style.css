@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', 'Open Sans';
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.counter{
+    text-align: center;
+}
+
+.one{
+    font-family: inherit;
+}
+
+.number{
+    color: aquamarine;
+}
+
+.box{
+    background: transparent;
+    border: 0.1rem dashed black;
+    padding: 0.75rem 1.25rem;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: inherit;
+    text-transform: uppercase;
+}
