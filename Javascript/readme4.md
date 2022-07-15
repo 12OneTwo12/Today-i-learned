@@ -4,7 +4,7 @@
     
 ## 목차  
   * #### [[ 렌더링이란 ]](#렌더링이란)
-  * #### [[ node란 무엇인가? ]](#node란-무엇인가?)
+  * #### [[ node란 무엇인가 ]](#node란-무엇인가)
   * #### [[ Javascript Web API ]](#javascript-web-api)
   * #### [[ Javascript 이벤트(Javascript Event) 추가와 제거 ]](#javascript-이벤트javascript-event-추가와-제거)
   * #### [[ 이어서 보기 ]](#이어서-보기)
@@ -38,7 +38,7 @@
   이제 DOM을 보게 되면 웹 브라우저가 html 페이지를 인식하는 방식을 이야기 하거나 문서 객체(document object)와  
   관련된 객체의 집합에 관한 이야기라는 것을 쉽게 추측할 수 있다.  
     
-* ### node란 무엇인가?  
+* ### node란 무엇인가    
   
   HTML문서에 관한 모든 것을 담고 있는, 계층적 정보 단위를 말한다.  
   HTML DOM은 노드(node)라고 불리는 계층적 단위에 정보를 저장하고 있다.  
