@@ -140,7 +140,7 @@ const countButtons = document.querySelectorAll('button');
 
 let count = 0;
 
-const resultcolor = () => { // 변수나 함수 이름지을때 구체적으로, 보면 바로 알아볼 수 있게
+const resultcolor = () => { 
     if(count === 0){
     value.style.color = "black";
     } else if ( count > 0 ){
@@ -172,4 +172,29 @@ countButtons.forEach((button) => {
 }) 
 ```  
   
-  이를 통해 다시한번 구현해 
+  이를 통해 다시한번 구현해 냈지만 조건문을 줄일 수 있는 방법 또한 존재했다.  
+    
+```javascript
+countButtons.forEach((button) => { 
+    
+    button.addEventListener('click', (event)=>{
+        const curTarget = event.currentTarget;
+        
+        const styles = curTarget.classList[1];
+
+        //nested ternary operator(중첩된 삼항 연산자)
+        count = styles !== 'reset' ? (count = styles === 'decrease' ? --count : ++count) : 0;
+
+        let cvColor = '';
+
+        cvColor = count !== 0 ? (cvColor = count > 0 ? 'green' : 'red') : 'grey';
+
+        countValue.textContent = count;
+        countValue.style.color =cvColor;
+
+    });
+})
+``` 
+  
+  이렇게 3가지 방법으로 완성 시켜보았다.  
+  
