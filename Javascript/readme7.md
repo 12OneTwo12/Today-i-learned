@@ -367,7 +367,135 @@
       하지만 단점은 작업의 실행 순서가 보장 되지 않는다는 점이 있다.  
         
           비동기 처리 방식으로 동작하는 JS 함수들 : setTimeout(), setInterval, HTTP 요청, 이벤트 핸들러(EventHandler)
-            
+              
+                
+ * ### Ajax(Asynchronous Javascript and XML)  
+
+  * #### Ajax란 무엇인가?  
+  
+    Ajax란 Asynchronous Javascript And Xml(비동기식 자바스크립트와 xml)의 약자인데,  
+    자바스크립트를 이용해 서버와 브라우저가 비동기 방식으로 데이터를 교환할 수 있는 통신 기능이다.  
+    브라우저가 가지고있는 XMLHttpRequest 객체를 이용해서 전체 페이지를 새로 고치지 않고도 페이지의 일부만을 위한 데이터를 로드하는 기법이다.  
+      
+    다르게 표현하자면 자바스크립트를 통해서 서버에 데이터를 비동기 방식으로 요청하는 것이다.  
+    여기서 비동기 방식이라 함은 웹페이지를 리로드하지 않고 데이터를 불러오는 방식이며 Ajax를 통해서   
+    서버에 요청을 한 후 멈추어 있는 것이 아니라 그 프로그램은 계속 돌아간다는 의미를 내포하고 있다.  
+    AJAX라는 기술은 여러가지 기술이 혼합적으로 사용되어 이루어진다. 대표적인 예로는 아래와 같은 것들이 있다.  
+      
+      * HTML
+      * DOM
+      * JavaScript
+      * XMLHttpRequest
+      * Etc
       
 
-         
+  * #### AJAX로 할 수 있는 것  
+
+    AJAX라는 네트워크 기술을 이용하여 클라이언트에서 서버로 데이터를 요청하고 그에 대한 결과를 돌려받을 수 있다.  
+      
+        클라이언트란?
+        서버에서 정보를 가져와서 사용자에게 보여줄 수 있고 사용자와 상호작용할 수 있는 소프트웨어를 일컫는다.
+        Ex) 웹브라우저, 핸드폰 어플리케이션 등...  
+          
+  * #### AJAX를 사용하는 이유  
+
+    단순하게 WEB화면에서 무언가 부르거나 데이터를 조회하고 싶을 경우, 페이지 전체를 새로고침하지 않기 위해 사용한다고 볼 수 있다.  
+    AJAX는 HTML 페이지 전체가 아닌 일부분만 갱신할 수 있도록 XMLHttpRequest객체를 통해 서버에 request한다.   
+    이 경우, JSON이나 XML형태로 필요한 데이터만 받아 갱신하기 때문에 그만큼의 자원과 시간을 아낄 수 있다.  
+      
+  * #### AJAX의 장단점  
+
+    * AJAX의 장점  
+
+          웹페이지의 속도향상  
+            
+          서버의 처리가 완료될 때까지 기다리지 않고 처리가 가능하다.  
+            
+          서버에서 Data만 전송하면 되므로 전체적인 코딩의 양이 줄어든다.  
+            
+          기존 웹에서는 불가능했던 다양한 UI를 가능하게 해준다. ( Flickr의 경우, 사진의 제목이나 태그를 페이지의 리로드 없이 수정할 수 있다.)  
+            
+    * AJAX의 단점  
+
+          히스토리 관리가 되지 않는다.  
+            
+          페이지 이동없는 통신으로 인한 보안상의 문제가 있다.  
+          
+          연속으로 데이터를 요청하면 서버 부하가 증가할 수 있다.  
+          
+          XMLHttpRequest를 통해 통신하는 경우, 사용자에게 아무런 진행 정보가 주어지지 않는다.   
+          (요청이 완료되지 않았는데 사용자가 페이지를 떠나거나 오작동할 우려가 발생하게 된다.)  
+            
+          AJAX를 쓸 수 없는 브라우저에 대한 문제 이슈가 있다.  
+            
+          HTTP 클라이언트의 기능이 한정되어 있다.  
+            
+          지원하는 Charset이 한정되어 있다.  
+            
+          Script로 작성되므로 디버깅이 용이하지 않다.  
+            
+          동일-출처 정책으로 인하여 다른 도메인과는 통신이 불가능하다. (Cross-Domain문제)  
+            
+  * #### AJAX 사용법  
+ 
+    그럼 이제 사용법에 대해 알아보자.  
+    ```javascript
+    const xhr = new XMLHttpRequest(); // XMLHttpRequest API 로딩
+    
+    xhr.open('GET', 'https://jsonplaceholder.typicode.com/todos')
+    ```  
+    특정 서버에 요청을 보내고 그에 대한 자료를 받아준다. ( API를 로딩해준다. )  
+    ```javascript
+    console.log(`OPENED, ${xhr.readyState}`); // 준비 상태 체크
+
+    // 준비 상태(readyState) 프로퍼티가 바뀔 때마다 arrow fn 호출
+    xhr.onreadystatechange = () => {
+        if(xhr.readyState === 2){
+            console.log(`HEADERS_RECEIVED ${xhr.readyState}`);
+        }
+
+        // 데이터 응답,(로딩) 완료와 같음 == onload
+        if(xhr.readyState === 4 && xhr.status === 200) {
+            console.log(`LOADING, ${xhr.readyState}`);
+            console.log(`response data: ${xhr.responseText}`);
+            const responseData = xhr.responseText;
+            const parsedData = JSON.parse(responseData);
+            console.log(parsedData);
+        }
+    };
+
+    xhr.onprogress = () => console.log(`LOADING, ${xhr.readyState}`);
+    xhr.onload = () => console.log(`DONE, ${xhr.readyState}`);
+
+    // 실제 요청 전송
+    xhr.send();
+    ```  
+      
+    예제를 실행해보면 이해가 더 될것같다.  
+      
+         readyState: HTTP 요청의 현재 상태를 가지고 있는 정수값 프로퍼티
+         0-(UNSENT) - 초기화 전. open() 호출하기 전.
+         1-(OPENED) - 열림.open()을 호출했고, send()는 호출하지 않은 상태
+         2-(HEADERS_RECEIVED) - 보냄. send()를 호출했지만 서버로부터 응답은 받지 못한 상태
+         3-(LOADING) - 데이터 수신 중. 응답 데이터의 일부를 받고있는 상태
+         4-(DONE) - 완료. 응답 데이터를 모두 받은 상태.
+
+
+         2. status: HTTP 요청에 대한 응답의 성공 여부를 나타내는 값
+         ex) 200 (응답 성공), 404(요청실패, 잘못된 경로)
+
+         3. statusText: HTTP 요청에 대한 응답 메시지를 나타내는 문자열
+         ex) status가 200일 경우, "OK"
+
+         4. responseType: 응답한 데이터의 타입
+         ex) document,json,text,blob
+
+         5. response : HTTP 요청에 대한 응답 몸체 (body)
+
+         이벤트 핸들러와 관련된 프로퍼티
+         onreadystatechange: readyState 프로퍼티의 값이 변경된 경우
+
+         메서드
+         1. open() : HTTP 요청 초기화(준비단계)
+         2. send() : HTTP 요청 실제 전송
+    
