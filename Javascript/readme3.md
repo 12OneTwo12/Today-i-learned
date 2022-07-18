@@ -10,7 +10,7 @@
   * #### [[ addEventListener ]](#addeventlistener)  
   * #### [[ Javascript 배열(Javascript Array) ]](#javascript-배열javascript-array)  
   * #### [[ 배열 매서드(함수)의 반환 패턴 ]](#배열-매서드함수의-반환-패턴)  
-  * #### [[ 이어서 보기 ]](#이어서 보기)  
+  * #### [[ 이어서 보기 ]](#이어서-보기)  
   * #### [[ 돌아가기 ]](#돌아가기)  
     
       
