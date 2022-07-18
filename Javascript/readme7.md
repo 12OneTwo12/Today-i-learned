@@ -264,3 +264,110 @@
   ```  
   이런 식으로 사용할 수 있다.  
   
+    
+ * ### JavaScript sync, async(동기와 비동기)  
+      
+    데이터를 받는 방식인 동기와 비동기. 이 둘의 개념에 대해 알아보고 둘의 차이점을 알아보도록 하자.  
+    
+    * #### synchronous(동기)  
+
+      synchronous란 직역하자면 동시 발생[존재]하는 이라고 해석 되는데,  
+      말 그대로 동시에 일어난다는 뜻이다. 요청과 그 결과가 동시에 일어난다는 약속인데, 바로 요청을 하면
+      시간이 얼마나 걸리던지 요청한 자리에서 결과가 주어져야 한다.  
+      
+          함수가 호출된 순서대로 순차적으로 실행됨 - 동기(sync) 방식  
+            
+          요청한 결과가 한자리에서 동시에 일어남  
+            
+          A노드와 B노드 사이의 작업 처리 단위(transaction)을 동시에 맞추겠다.  
+            
+      * #### 순차 실행  
+
+        ```javascript
+        const firstFunc = () => console.log('첫 번째 함수가 호출됨');
+
+        const someLongWork = () => {
+            console.log('-----------');
+            console.log('특정 작업 처리중.. 시간 오래 걸림');
+            console.log('-----------');
+        }
+
+        const secondFunc = () => console.log('두 번째 함수가 호출됨');
+
+        // 함수들이 작성한 순서대로 순차적으로 호출됨
+        firstFunc();
+        someLongWork();
+        secondFunc();
+        ```  
+          
+        한 번에 하나의 작업(Task)만 처리하기 때문에 특정 작업(ex 특정 함수)someLongWrok()이 길어질 경우,  
+        secondFunc()는 someLongWork()가 처리될 때 까지 작업이 중단(Blocking, 블로킹)된다.  
+          
+        ```javascript
+        console.log(Date.now()); // 1970년 1월 1일부터 지금까지 흘러간 초(ms)
+
+        // 일정한 작업 시간이 경과한 이후에 함수가 호출(실행)되도록 시간을 지연하는 sleep 함수
+        const sleep = (callbackFn,delay) => {
+            console.log('시간 지연중..');
+            const delayedTime = Date.now() + delay;
+
+            // 현재 시간(Date.now())에 delay를 더한 delayedTime이
+            // 현재 시간(Date.now())보다 작으면 계속 반복.
+            while(Date.now() < delayedTime);
+
+            callbackFn();
+        }
+
+        function firstWork() {
+            console.log('첫 번째 작업 수행');
+        }
+
+        function secondWork() {
+            console.log('두 번째 작업 수행');
+        }
+
+        // secondWork()는 sleep()의 실행이 종료된 이후 호출됨, 3초 이상 블로킹.
+        sleep(firstWork, 3 * 1000);
+
+        secondWork();  
+        ```  
+          
+        이처럼 현재 실행 중인 작업(Task)이 종료할 때까지 다음에 실행될 작업이 대기하는 방식을 동기(synchronous) 처리라고 한다.  
+        동기 처리 방식은 작업을 순서대로 하나씩 처리, 실행 순서가 보장되는 장점이 있지만 단점은 앞선 작업이 종료할 때까지 이후 작업들이 블로킹된다는 것이 있다.  
+          
+    * #### asynchronous(비동기)  
+  
+      asynchronous는 직역하자면 동시에 존재[발생]하지 않는 이라는 뜻이다.  
+      비동기는 동시에 일어나지 않는다는 의미이다. 요청한 결과는 동시에 일어나지 않을거라는 약속이기도 하다.  
+      현재 실행 중인 작업(Task)가 아직 종료되지 않은 상태라고 해도, 다음에 해야 할 작업을 곧바로 실행하는 방식이다.  
+          
+          요청한 그 자리에서 결과가 주어지지 않음  
+            
+          노드 사이의 작업 처리 단위를 동시에 맞추지 않아도 된다.  
+              
+      아래 예제를 실행 해보면 이해가 쉬울 것 같다.  
+        
+      ```javascript
+      const firstWork = () => {
+          console.log('첫 번째 작업 진행 중');
+      }
+
+      const secondWork = () => {
+          console.log('두 번째 작업 진행 중');
+      }
+
+      // 지정한 타이머(일정 시간) 이후에 콜백 함수 firstWork()를 호출
+      // 타이머 함수 setTimeout()의 특징 중 하나, 블로킹(작업 중단)을 하지 않고, 비동기적으로 처리함.
+      setTimeout(firstWork, 3*1000);
+      secondWork();
+      ```
+        
+      이러한 비동기 처리 방식은 현재 실행 중인 작업(Task, ex, firstwork)가 종료되지 않은 상태라고 해도,  
+      다음 작업(secondWrok)을 곧바로 실행하기 때문에 블로킹이 발생하지 않는 장점이 있다.  
+      하지만 단점은 작업의 실행 순서가 보장 되지 않는다는 점이 있다.  
+        
+          비동기 처리 방식으로 동작하는 JS 함수들 : setTimeout(), setInterval, HTTP 요청, 이벤트 핸들러(EventHandler)
+            
+      
+
+         
