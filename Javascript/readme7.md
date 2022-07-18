@@ -102,7 +102,165 @@
       ```  
       이렇게 객체에도 사용할 수 있다.  
         
+          
+ * ### Javascript Destructuring(Javascript 구조분해할당)
+    
+    Destructuring이란, 구조(배열 or 객체 등 어떠한 자료구조)를 뜻하는데,  
+    Destructuring assignment(분해 할당)은 객체의 프로퍼티나 배열을 여러 개의 변수로 분해해주는 것이다. 
+    함수에 객체나 배열을 전달해야 하는 경우가 생기곤 한다. 가끔은 객체나 배열에 저장된 데이터 전체가 아닌 일부만 필요한 경우가 생기기도 하는데,
+    이럴 때 객체나 배열을 변수로 '분해’할 수 있게 해주는 문법인 구조 분해 할당(destructuring assignment) 을 사용할 수 있다.   
+    이 외에도 함수의 매개변수가 많거나 매개변수기본값이 필요한 경우 등에서 구조 분해(destructuring)는 그 진가를 발휘한다.  
+    예시로 살펴보자.  
+      
+    * #### Object Destructuring : 객체의 요소들을 개별 변수들로 분해
+  
+    ```javascript
+    const book = {
+        id : 1,
+        title : 'The Great Gatsby',
+        pudData : '10/04/1925',
+    };
+    ```  
+      위와 같은 객체가 있다 가정하자.  
+      기존의 방식을 통해 배열을 분해하여 이용하려면 아래와 같이 사용해야 했을 것이다.  
+    ```javascript
+    const id = book.id;
+    const title = book.title;
+    const pudData = book.pudData;
+    ```  
+      그러나 Object Destructuring 방식을 이용하면,  
+    ```javascirpt
+    const { id, title, pudData } = book;
+    console.log( id, title, pudData );
+    ```  
+      위와 같은 방법으로 끝나는 것이다.  
+      다른 이름으로 지정하고 싶은 경우에는  
+    ```javascript
+    // { 객체 프로퍼티: 목표 변수 }
+    const { id: bookId, title: bookTitle, pudData: bookPubData } = book ;
+    ```  
+      이렇게 주면 되는 것이다.  
+      지금은 프로퍼티가 몇개 되지 않아 효용이 없는 것 같이 보일 수 있어도, 가령 프로퍼티가 굉장히 많다고 하면 기존에 비해 우리는 훨씬 편리함을 얻을 수 있는것이다.  
+      
+      중첩된 프로퍼티 역시 가능하다.  
+    ```javascript
+    // 중첩된 객체도 destructuring가능
+    const anotherBook = {
+        id : 2,
+        title : 'The old man and the sea',
+        pubData : '08/09/1952',
+        author : {
+            firstName : 'Ernest', // 프로퍼티 중첩도 가능
+            lastName : 'Hemingway',
+        },
+    };
+    
+    const { 
+        id, 
+        title, 
+        pubData, 
+        author : { firstName, lastName } 
+    } = anotherBook;
+    ```  
+    
+    * #### Array Destructuring : 배열의 요소들을 개별 변수들로 분해
+
+        이번에는 배열로 봐보자.  
+        JS Array는 순서를 보장받아야하기 때문에 기존 방식에서는 인덱싱을 통해 분해했다.  
+      ```javascript
+      const data = ['1970', '12', '01'];
+      const year = data[0];
+      const month = data[1];
+      const day = data[2];
+      ```  
+        그러나 Array Destructuring 방식으로는,  
+      ```javascript
+      const [ year, month, day ] = data;
+      ```
+        이렇게 간단하게 끝날 수 있다. 중첩 배열의 Destructuring또한 가능한데,  
+      ```javascript
+      const nestedArray = [1,2,[true, 'hoya'],5];
+      const [one, two, [isTure, userName], five] = nestedArray;
+      ```  
+        이렇게 할 수 있다. 예를 들어 아래 예제의 객체가 있다고 가정할때,
+      ```javascript
+      const movie = {
+          movieTitle : 'spiderman no way home',
+          movieActor : { 
+          firstName : 'Tom',
+          lastName: 'Holland',
+          },
+          hashTags : [ 'honey fun', 'handsome', 'thrill' ],
+      }
+      ```  
+        콘솔 로그를 통해 ```console.log(movieDate, movieActor, firstName, tag1, tag2);``` 이렇게 로그에 남길 수 있도록 해보면,  
+      ```javascript
+      const {
+          movieTitle,
+          movieActor, //객체만 따로 분해하고 싶을 때
+          movieActor : { firstName }, // 내부에서 별도로 Destructuring
+          hashTags : [ tag1, tag2 ],
+        } = movie;
         
+      console.log(movieDate, movieActor, firstName, tag1, tag2);
+      ```  
+      이렇게 하고 로그에 남길 수 있을 것이다.  
+          
+          
+ * ### Javascript Module(Javascript 모듈)  
+
+  모듈이란, 개발하는 애플리케이션의 크기가 커지면 언젠간 파일을 여러 개로 분리해야 하는 시점이 온다.   
+  이때 분리된 파일 각각을 '모듈(module)'이라고 부르는데, 모듈은 대개 클래스 하나 혹은 특정한 목적을 가진 복수의 함수로 구성된 라이브러리 하나로 구성된다.  
+  코드를 여러 파일로 쪼개서 모듈화시키는 방법을 Modular Programming이라 하는데, 서로 관계가 있는 기능끼리, 파일끼리 서로 module의 형태로 불러와서  
+  필요한 코드만 사용하는 방식이다. ES6(2015)에서 모듈화를 할 수 있는 import, export라는 키워드 사용한다.  
     
-    
+  예를 들어 프로그램이 커져서 계산 함수들을 모아놓은 js파일 모듈과 출력을 당담하는 js파일 모듈이 다르다고 가정했을때,  
+  ```javascript
+  function sum(x,y){
+      return x+y;
+  }
+
+  function sub(x,y){
+      return x-y;
+  }
+
+  function mul(x,y){
+      return x*y;
+  }
+
+  function div(x,y){
+      return x/y;
+  }
+  ```  
+  위 예제가 복잡한 수식으로 된 함수들이라 가정했을 때, 우리가 출력과 함수 모두를 한 파일에 넣게 되면 우리의 인지 범위를 벗어나버리게 될것이다.  
+  그렇기에 함수들을 엮어놓은 모듈을 따로 만들어 두고 필요할때마다 다른 모듈에서 꺼내 쓸 수 있게 한것이 모듈 프로그램이라 생각하면 된다.  
+  이는 import, export라는 키워드로 사용되는데, 이렇게 사용하면 된다.  
+    ```javascript
+  export function sum(x,y){
+      return x+y;
+  }
+
+  export function sub(x,y){
+      return x-y;
+  }
+
+  export function mul(x,y){
+      return x*y;
+  }
+
+  export function div(x,y){
+      return x/y;
+  }
+  ```  
+  먼저 보낼 모듈에서 export를 넣어주고, 사용할 모듈에서는 이렇게 하면 된다.  
+  ```javascript
+  // import {불러올 함수명} from '해당 함수를 가지고 있는 파일의 경로' ( ./ : 현재 경로 )
+  import { sum, sub, mul, div } from './function.js'; 
+  
+  console.log(sum(10,5));
+  console.log(sub(10,5));
+  console.log(mul(10,5));
+  console.log(div(10,5));
+  ```  
+  이런 식으로 사용할 수 있다.  
   
