@@ -3,7 +3,14 @@
   #### [ 2022-07-18 ]  
     
 ## 목차  
-  * #### [[ Javascript spread syntax(Javascript 전개 문법)
+  * #### [[ Javascript spread syntax(Javascript 전개 문법) ]](#javascript-spread-syntaxjavascript-전개-문법)  
+  * #### [[ Javascript Destructuring(Javascript 구조분해할당) ]](#javascript-destructuringjavascript-구조분해할당)  
+  * #### [[ Javascript Module(Javascript 모듈) ]](#javascript-modulejavascript-모듈)  
+  * #### [[ JavaScript sync and async(동기와 비동기) ]](#javascript-sync-and-async동기와-비동기)  
+  * #### [[ Ajax(Asynchronous Javascript and XML) ]](#ajaxasynchronous-javascript-and-xml)  
+  * #### [[ JavaScript JSON(JavaScript Object Notation) ]](#javascript-jsonjavascript-object-notation)  
+  * #### [[ 돌아가기 ]](#돌아가기)  
+    
       
 -----------------------------------------------------------------------------------------------------------------------------------------------------    
    
@@ -265,7 +272,7 @@
   이런 식으로 사용할 수 있다.  
   
     
- * ### JavaScript sync, async(동기와 비동기)  
+ * ### JavaScript sync and async(동기와 비동기)  
       
     데이터를 받는 방식인 동기와 비동기. 이 둘의 개념에 대해 알아보고 둘의 차이점을 알아보도록 하자.  
     
