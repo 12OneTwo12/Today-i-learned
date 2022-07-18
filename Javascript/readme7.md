@@ -599,7 +599,6 @@
       console.log(parsedData2); // 로그에 남겨 확인
       ```
       
-* #### [ 돌아가기 ](https://github.com/12OneTwo12/TIL)  
-
-      
+* #### 돌아가기 
+#### [ Link ](https://github.com/12OneTwo12/TIL) 
         
