@@ -6,26 +6,26 @@
   
 ### Record
   
-* [[ 시작 ]](https://github.com/12OneTwo12/TIL/blob/main/record/20220710.md) ( 2022-july-10 )
+* [[ 시작 ]](https://github.com/12OneTwo12/TIL/blob/main/record/20220710.md) [ 2022-7-10 ]    
 
 ### Basic  
   
-* [[ Internet과 Web ]](https://github.com/12OneTwo12/TIL/blob/main/Basic/Internet.md)
+* [[ Internet과 Web ]](https://github.com/12OneTwo12/TIL/blob/main/Basic/Internet.md) [ 2022-07-11 ]    
 
 ### HTML
 
-* [[ HTML ]](https://github.com/12OneTwo12/TIL/blob/main/Html/basic.md)
+* [[ HTML ]](https://github.com/12OneTwo12/TIL/blob/main/Html/basic.md) [ 2022-07-11 ]    
   
 ### CSS
   
-* [[ CSS란 무엇이고 어떻게 적용하는가 ]](https://github.com/12OneTwo12/TIL/blob/main/CSS/readme.md)
-* [[ CSS에 대해 조금 더 세부적으로 알아보자 ]](https://github.com/12OneTwo12/TIL/blob/main/CSS/readme2.md)  
+* [[ CSS란 무엇이고 어떻게 적용하는가 ]](https://github.com/12OneTwo12/TIL/blob/main/CSS/readme.md) [ 2022-07-12 ]    
+* [[ CSS에 대해 조금 더 세부적으로 알아보자 ]](https://github.com/12OneTwo12/TIL/blob/main/CSS/readme2.md) [ 2022-07-12 ~ 2022-07-13 ]    
   
 ### Javascript  
   
-* [[ Javascript란 무엇인가 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme.md)  
-* [[ Javascript 더 자세히 알아보자 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme2.md)  
-* [[ Javascript 더 자세히 알아보자 2 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme3.md)    
-* [[ Javascript 더 자세히 알아보자 3 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme4.md)  
-* [[ Javascript 버튼을 클릭하여 배경색 바꿔보기 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme5.md)  
-* [[ Javascript 버튼을 클릭하여 카운트 하기 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme6.md)  
+* [[ Javascript란 무엇인가 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme.md) [ 2022-07-13 ]   
+* [[ Javascript 더 자세히 알아보자 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme2.md) [ 2022-07-13 ]   
+* [[ Javascript 더 자세히 알아보자 2 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme3.md) [ 2022-07-14 ]     
+* [[ Javascript 더 자세히 알아보자 3 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme4.md) [ 2022-07-15 ]   
+* [[ Javascript 버튼을 클릭하여 배경색 바꿔보기 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme5.md) [ 2022-07-15 ]   
+* [[ Javascript 버튼을 클릭하여 카운트 하기 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme6.md) [ 2022-07-18 ]  
