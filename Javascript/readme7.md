@@ -499,3 +499,61 @@
          1. open() : HTTP 요청 초기화(준비단계)
          2. send() : HTTP 요청 실제 전송
     
+      
+ * ### JavaScript JSON(JavaScript Object Notation)  
+    
+    #### JSON : 'J'ava'S'cript 'O'bject 'N'otation  
+    JSON이란 JavaScript Object Notation라는 의미의 축약어로 데이터를 저장하거나 전송할 때 많이 사용되는 경량의 DATA 교환 형식이다.  
+    Javascript에서 객체를 만들 때 사용하는 표현식을 의미하는데, JSON 표현식은 사람과 기계 모두 이해하기 쉬우며 용량이 작아서,   
+    최근에는 JSON이 XML을 대체해서 데이터 전송 등에 많이 사용한다.  
+    특히, 인터넷에서 자료를 주고 받을 때 그 자료를 표현하는 방법으로 알려져 있다.  
+      
+    * #### JSON 특징  
+  
+      * 클라이언트와 서버 간의 HTTP 통신을 위한 텍스트 데이터 포맷이다.
+      * JS에 종속되지 않는 언어 독립형 데이터 포맷이다.
+      * 대부분의 프로그래밍 언어에서 사용 가능.
+      * 서버와 클라이언트 간의 교류에서 일반적으로 많이 사용된다.  
+      * 자바스크립트 객체 표기법과 아주 유사하다.  
+      * 자바스크립트를 이용하여 JSON 형식의 문서를 쉽게 자바스크립트 객체로 변환할 수 있는 이점이 있다.  
+      * JSON 문서 형식은 자바스크립트 객체의 형식을 기반으로 만들어졌다. 
+      * javascript가 java로 변환되는 걸 도와주는 친구다. 
+
+    * #### JSON 작성법  
+
+      JSON 작성 방식은 Javascript 객체 작성 방식과 유사하다.  
+      
+            JSON 작성 방식 : Key 값 및 문자열은 ""(쌍따옴표만 가능)로 작성해야함, 홑따옴표 불가
+            {
+                    "title": "노인과 바다",
+                    "author": "해밍웨이",
+                    "isSold": false,
+                    "genre": ["novel", "essay"],
+            }  
+              
+      만약, JS Object를 Client 측에서 서버로 데이터(일반적으로 객체)를 전송하기 위해서는 객체를 문자열화(직렬화, Serialization)해야한다.  
+      ```javascript
+      const book = {
+          title: "노인과 바다",
+          author: "해밍웨이",
+          isSold: false,
+          genre: ["소설", "경험담"],
+      };
+      
+      const jsonData = JSON.stringify(book); // JS Object를 JSON 포맷의 문자열로 변환
+      ```  
+        
+      JSON.stringify()는 일반적으로 서버로 보내는 데이터는 한개일 수도 있지만, 여러 개일 수도 있기 때문에, 객체 뿐만 아니라 배열도 JSON 포맷의 문자열로 직렬화한다.  
+        
+       ```javascript
+       const books = [
+          { id: 1, title: "하농", author: "하농", isSold: false },
+          { id: 2, title: "체르니", author: "체르니", isSold: true },
+          { id: 3, title: "부르크뮐러", author: "부르크뮐러", isSold: true },
+       ];
+       
+       const jsonData2 = JSON.stringify(books); // 배열을 JSON 포맷의 문자열로 변환
+       ```  
+         
+      
+      
