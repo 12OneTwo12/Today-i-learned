@@ -80,7 +80,7 @@
                             <i class="fas fa-user-astronaut fa-lg"></i>
                         </div>
                         <div class="Header__sub__profile__username">
-                            <p class="colorful-font">playdata</p>
+                            <p class="colorful-font">Menu</p>
                         </div>
                     </div>
                 </div>
@@ -471,6 +471,12 @@ footer {
 }
 ```  
   
-
+![image url](https://github.com/12OneTwo12/TIL/blob/main/Javascript/papago3.png?raw=true)  
+  
+  결과는 다음과 같다.  
+  그래도 조금 그럴싸 한거같다.  
+  내심 뿌듯했다.  
+  이제 텍스트를 입력했을 때, 번역된 결과도 나오게 만들어야한다.  
+  
 
  
