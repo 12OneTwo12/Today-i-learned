@@ -389,11 +389,10 @@
     서버에 요청을 한 후 멈추어 있는 것이 아니라 그 프로그램은 계속 돌아간다는 의미를 내포하고 있다.  
     AJAX라는 기술은 여러가지 기술이 혼합적으로 사용되어 이루어진다. 대표적인 예로는 아래와 같은 것들이 있다.  
       
-      * HTP
-      * DOM
-      * JavaScript
-      * XMLHttpRequest
-      * Etc
+      * HTTP  
+      * setTimeout, setInterval  
+      * XMLHttpRequest  
+      * Etc  
       
 
   * #### AJAX로 할 수 있는 것  
