@@ -695,4 +695,8 @@ app.listen(3000, () => console.log('http://127.0.0.1:3000/ app listening on port
   
   솔직히 이번은 그저 강사님을 따라가기 바빴다.  
   제대로 이해하지 못한 부분이 더 많았기 때문에 혼자 천천히 읽어 내려가며 이해볼수 있도록 해야겠다.  
+  완성은 이렇게 됐다.  
+  
+![image url](https://github.com/12OneTwo12/TIL/blob/main/Javascript/papago4.png?raw=true)  
+![image url](https://github.com/12OneTwo12/TIL/blob/main/Javascript/papago5.png?raw=true)  
   
