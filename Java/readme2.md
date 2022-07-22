@@ -119,6 +119,19 @@
       ```long n = 135;``` 리터럴 135는 int 타입이지만 long의 범위가 int 보다 넓기 때문에 자동으로 long n = (long)135;로 작성된다.  
       
       ```float o = 100;``` 서로 다른 타입이어도, 정수보다 실수가 값을 저장할 수 있는 범위가 더 크기 때문에 가능하다.  
-		  boolean타입을 제외한 나머지 기본 타입들은 서로 형 변환이 가능하다.  
+      boolean타입을 제외한 나머지 기본 타입들은 서로 형 변환이 가능하다.  
+        
+      컴퓨터에서 모든 값들은 결국 0과1인 byte로 처리되는데, 문자는 어떻게 처리되는 걸까?  
+      ```java
+      char firstLetter = 'A';
+      int castedValue = firstLetter;
+      System.out.println(castedValue); // 65, ASCII코드표 참조
+      ```  
+      위 예제를 출력 해보면 65라고 나온다.  
+      ```java
+      // ASCII 코드값인 65를 char에 직접 저장해도 결과값은 동일
+      char sameWithCastedValue = 65;
+      System.out.println(sameWithCastedValue);
+      ```  
+        
       
-          
