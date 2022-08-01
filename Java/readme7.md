@@ -349,4 +349,73 @@
   }
   ```
   이렇게 되면 ArithmeticException이라는 오류가 발생 했을때 ```0으로 나눠지면 안돼요```가 출력되는 것을 알 수 있다.  
-  
+    
+  그렇다면 우리가 오류를 모를 때는 어떻게 할까?  
+  그때는 Exception이라는 예외중의 최상위 클래스를 활용하면 좋을 듯 하다.  
+  ```java
+  System.out.println(1);
+  System.out.println(2);
+  try {
+	  System.out.println(3/0); // 정수 3을 0으로 나누는 예외 발생용 코드
+  } catch (Exception e) { // Exception은 예외중에 최상위 클래스, 3을 0으로 나누는 과정에서 발생하는 예외 클래스(ArithmeticException)의 인스턴스가 참조변수 e에 할당됨
+	  if (e instanceof ArithmeticException) {
+		  System.out.println(e + "는 ArithmeticException 인스턴스입니다.");
+	  }
+	  System.out.println(4);
+  }
+  System.out.println(5);
+  ```  
+  이렇게 하면 아래와 같이 출력되는 것을 볼 수 있다.  
+  ```
+  1
+  2
+  java.lang.ArithmeticException: / by zero는 ArithmeticException 인스턴스입니다.
+  4
+  5
+  ```  
+    
+* ### finally block  
+
+  finally block이란 try-catch문과 함께 사용되며 예외의 발생 여부에 상관없이 무조건 실행되어야 할 코드를 포함시킬 때 사용된다.  
+  try-catch문의 끝에 선택적으로 덧붙여서 사용할 수 있다.  
+  ```java
+  try {
+	  //예외가 발생할 가능성이 있는 코드
+  } catch(Exception e1){
+	  // 예외처리를 위한 코드
+  } finally {
+	  //예외 발생여부에 관계 없이 항상 수행되어야 하는 코드
+  }
+  ```  
+    
+  따라서 finally는 무조건 실행되기 때문에 예외가 발생한 경우에는 'try → catch → finally' 순으로, 
+  예외가 발생하지 않은 경우에는 'try → finally'순으로 실행된다.  
+  예제로 살펴본다면,  
+  ```java
+  public class Finally {
+
+	public static void main(String[] args) {
+		method1();
+		System.out.println("method1()의 수행종료, main()으로 복귀");
+	}
+
+	public static void method1() {
+		try {
+			System.out.println("method1()이 호출 되었음");
+			return;
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			System.out.println("method1()의 finally block이 실행 되었음");
+		}
+	}
+  }
+  ```  
+  위와 같다면,   
+  ```
+  method1()이 호출 되었음
+  method1()의 finally block이 실행 되었음
+  method1()의 수행종료, main()으로 복귀
+  ```  
+    
+  이처럼 실행 되는 것을 볼 수 있다.  
