@@ -419,3 +419,44 @@
   ```  
     
   이처럼 실행 되는 것을 볼 수 있다.  
+
+* ### 예외 던지기 (throws)  
+
+  메소드 내부에서 예외가 발생 할 수 있는 코드 작성 시 try-catch 블록으로 예외를 처리하는 것이 기본이지만,  
+  경우에 따라서는 메소드를 호출 한 곳으로 예외를 떠넘기거나 강제로 발생 시킬 수 있다.  
+  문법은 굉장히 간단하다.  
+  ```
+  throw 발생시킬 예외 
+  ```  
+  간단한 예제로 살펴보자.  
+  ```java
+  public static void main(String[] args) {
+	// throw : 예외를 고의적으로 발생시킬 때 사용하는 키워드
+	try {
+		Exception e = new Exception(); // 예외 인스턴스 직접 생성
+		throw e; // 예외를 발생시킬(다른 말로 예외를 던진다)
+	} catch (Exception e) {
+		System.out.println("예외 메시지 : " + e.getMessage());
+		e.printStackTrace();
+	}
+	System.out.println("프로그램 정상 종료");
+  }
+  ```  
+  참조변수 e를 throw함으로써 예외를 발생시키고 이에대한 메시지를 출력하도록 했다.  
+  ```java
+  public static void main(String[] args) throws Exception {
+	  method1();
+  } // 닫는 중괄호 -> 해당 메서드의 종료
+	
+  static void method1() throws Exception {
+	  method2();
+  } 
+	
+  static void method2() throws Exception { // throws Exception : method2를 호출한 곳(method1()) 으로 예외에 대한 처리(책임)를 떠넘김
+	  //Exception e = new Exception();
+	  //throw e ;
+	  throw new Exception(); // 위와 동일한 코드, 한줄로 작성
+  } 
+  ```  
+  혹은 이처럼 예외에 대한 처리를 떠넘길때도 사용한다.  
+    
