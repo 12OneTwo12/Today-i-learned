@@ -211,3 +211,142 @@
       
      쉽게 생각하면 Static은 프로그램 시작부터 끝까지 쓸수 있게, Stack은 호출될때 사용하고 사라짐, 
      Heap은 참조변수의 주소가 가르치는 실제 데이터가 저장된 영역 정도로 이해했다.  
+     
+* ### 예외 처리(Exception Handling)  
+
+  내가 작성한 코드가 실행 도중에 어떤 원인에 의해 오작동(예상과는 다르게 작동)하거나 비정상적으로(갑자기) 종료가 되는 경우가 있다.  
+  이러한 결과를 초래한 원인을 프로그램 오류 라고 한다. 이러한 오류는 발생 시점에 따라 크게 2~3가지로 나눌 수 있다.  
+    
+  ```
+  1. 컴파일 오류(compile-time error)
+  2. 런타임 오류(runtime error)
+  3. 논리적 오류(logical error)
+  ```
+  
+  * #### 컴파일 오류 - 컴파일 불가능
+
+     ```
+     소스 코드의 컴파일 과정에서 발생하는 오류.
+
+     ex) Syntax Error(문법 오류)
+     ```
+     
+
+  * #### 런타임 오류  
+
+     ```
+     문법은 맞았으나, 실행 과정에서 발견(확인)되는 오류
+
+     ex) Shark s = (Shark)new Animal( )
+     ```  
+       
+  * #### 논리적 오류  
+
+     ```
+     문법도 맞고, 실행 과정에서의 에러도 없으나 논리가 틀려서 발생하는 오류  
+  
+     ex) 사람의 나이가 음수값으로 설정되거나 예금이 없는데 인출이 되거나 하는 경우.  
+     ```  
+       
+  자바에서는 실행 시(runtime)발생할 수 있는 프로그램 오류를 '에러(error)'와 '예외(exception)'로 분류한다.  
+    
+  * #### 에러(Error) - 시스템 레벨에서 발생, 심각한 문제, 개발자가 제어 불가    
+
+     ```
+     일단 발생하면 복구가 어려움.
+     별도의 처리가 없을 경우 프로그램이 예상치 못하게 비정상 종료되는 경우
+
+     하드웨어의 고장 등으로 인한 소프트웨어(응용 프로그램)의 실행에 문제(오류)가 생겨 발생
+
+     ex) 메모리 부족(OutofMemoryError), 
+
+      스택오버플로(StackOverflowError) 등
+     ```  
+       
+  * #### 예외(Exception) - 개발자의 코드에서 발생, 예방 가능, 개발자가 제어 가능  
+
+     ```
+     발생하더라도 수습될 수 있음. 비교적 덜 심각함.
+     개발자의 잘못된 코드 작성 or 웹 서비스 사용자의 잘못된 화면 조작으로 인한 소프트웨어(응용 프로그램)에 문제가 생기는 경우
+
+     ex) [NullPointerException.java](http://NullPointerException.java) , 
+     [IndexOutOfBoundsException.java](http://IndexOutOfBoundsException.java) → 모든 예외는 클래스 객체임
+
+     에러는 발생하면 프로그램의 비정상적인 종료를 막을 방법이 없지만, 
+     예외는 발생하더라도 이에 대한 대처 코드를 작성해놓을 경우 프로그램의 비정상적인 종료를 막을 수 있음.
+     개발자가 미리 대처가 가능하기 때문에 프로그램의 실행 도중에 문제가 생겨도 곧바로 종료하지 않고, 남아있는 작업(Task)을 수행한 후 정상적으로 종료할 수 있음
+     ```   
+       
+* ### 예외의 구분  
+
+  ![image url](https://github.com/12OneTwo12/TIL/blob/main/Java/2019-03-02-java-checked-unchecked-exceptions-1.png?raw=true)  
+    
+  Exception 클래스 : 모든 예외의 최상위 클래스  
+  
+  Exception 클래스는 다음과 같이 두 그룹으로 나누는 편.  
+    
+  ```
+  1. Exception 클래스와 그 하위 클래스들.
+  2. RuntimeException 클래스와 그 하위 클래스들(NullPointer, ClassCast, IndexOutOfBounds..)
+  ```  
+    
+* ### 예외의 처리  
+
+  예외 처리(Exception handling)란 프로그램 실행 과정에서 발생할 수 있는 예상치 못한 예외의 발생에 대처가 가능한 코드를 작성하는 것을 의미한다.  
+  따라서 프로그램의 비정상적인 종료를 막고, 정상적인 실행을 계속 유지하도록 하기 위함이다.   
+  이러한 오류를 무시하고 싶을 때도 있고, 오류가 날 때 그에 맞는 적절한 처리를 하고 싶을 때도 있다.   
+  이에 자바는 try ... catch, throw 구문을 이용해 오류를 처리 한다.  
+    
+  다음은 예외처리를 위한 try, catch문의 기본 구조이다.  
+    
+  ```
+  try { 예외가 발생할 가능성이 있는 코드를 작성 } catch(발생할 수 있는 예외클래스명 참조변수명) { 해당 예외에 대한 대처 코드 }
+  -> try {} : try 블럭(block) 내부에 예외가 발생할 가능성이 있는 코드를 작성함
+  ```
+    
+  ```java
+  try {
+      ...
+  } catch(예외1) {
+      ...
+  } catch(예외2) {
+      ...
+  ...
+  }  
+  ```
+  try 문안의 수행할 문장들에서 예외가 발생하지 않는다면 catch문 다음의 문장들은 수행이 되지 않는다.   
+  하지만 try 문안의 문장을 수행하는 도중에 예외가 발생하면 예외에 해당되는 catch문이 수행된다.  
+    
+  바로 예제를 봐보자.  
+    
+  ```java
+  int number = 100;
+  int result = 0;
+		
+  for(int i = 0; i < 10; i++) {
+	  result = number / (int)(Math.random() * 10);
+	  System.out.println(result);
+  }
+  ```  
+  위 구문을 실행하자 몇줄 잘 실행 되더니 오류가 이렇게 나왔다.  
+  ```
+  java.lang.ArithmeticException: / by zero
+	at dev.syntax.step05exception.Ex1.main(Ex1.java:10)
+  ```  
+  대충 보니 0으로는 나눌수 없다는 것 같다.  
+  그렇다면 이 ArithmeticException이라고 하는 오류에 예외 처리를 해보도록 하자.  
+  ```java
+  int number = 100;
+  int result = 0;
+		
+  for(int i = 0; i < 10; i++) {
+	  try { // try catch 시작
+	  	  result = number / (int)(Math.random() * 10);
+		  System.out.println(result);
+	  } catch(ArithmeticException exception) {
+		  System.out.println("0으로 나눠지면 안돼요");
+	  } // try catch 끝
+  }
+  ```
+  이렇게 되면 ArithmeticException이라는 오류가 발생 했을때 ```0으로 나눠지면 안돼요```가 출력되는 것을 알 수 있다.  
+  
