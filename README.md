@@ -56,4 +56,4 @@
 * [[ 다형성, 참조 변수의 타입 변환 그리고 오버라이딩 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme5.md) [ 2022-07-27 ]  
 * [[ 객체 배열 그리고 텍스트를 통한 입력과 간단한 console 기반 자바 프로그램 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme6.md) [ 2022-07-28 ]  
 * [[ 추상 메서드, 인터페이스, 메모리 구조, 예외 처리 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme7.md) [ 2022-08-01 ]  
-* [[ 객체 지향 언어의 4대 특징과 텍스트 파일을 통한 입력 및 console 기반 자바 프로그램 개선 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme8.md) [ 2022-08-01 ]  
+* [[ 객체 지향 언어의 4대 특징과 텍스트 파일을 통한 입력 및 console 기반 자바 프로그램 개선 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme8.md) [ 2022-08-02 ]  
