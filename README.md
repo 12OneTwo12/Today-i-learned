@@ -4,34 +4,34 @@
   
 ## 목차
   
-  * #### [ Record ](#record)  
-  * #### [ Basic ](#basic)  
-  * #### [ HTML ](#html)  
-  * #### [ CSS ](#css)  
-  * #### [ Javascript ](#javascript)  
-  * #### [ Git ](#git)  
-  * #### [ Java ](#java)  
+   ##### [ Record ](#record)  
+   ##### [ Basic ](#basic)  
+   ##### [ HTML ](#html)  
+   ##### [ CSS ](#css)  
+   ##### [ Javascript ](#javascript)  
+   ##### [ Git ](#git)  
+   ##### [ Java ](#java)  
   
 --------------------------------------------------------------------------------------------------------------------------------------------------    
   
-### Record
+#### Record
   
 * [[ 시작 ]](https://github.com/12OneTwo12/TIL/blob/main/record/20220710.md) [ 2022-7-10 ]    
 
-### Basic  
+#### Basic  
   
 * [[ Internet과 Web ]](https://github.com/12OneTwo12/TIL/blob/main/Basic/Internet.md) [ 2022-07-11 ]    
 
-### HTML
+#### HTML
 
 * [[ HTML ]](https://github.com/12OneTwo12/TIL/blob/main/Html/basic.md) [ 2022-07-11 ]    
   
-### CSS
+#### CSS
   
 * [[ CSS란 무엇이고 어떻게 적용하는가 ]](https://github.com/12OneTwo12/TIL/blob/main/CSS/readme.md) [ 2022-07-12 ]    
 * [[ CSS에 대해 조금 더 세부적으로 알아보자 ]](https://github.com/12OneTwo12/TIL/blob/main/CSS/readme2.md) [ 2022-07-12 ~ 2022-07-13 ]    
   
-### Javascript  
+#### Javascript  
   
 * [[ Javascript란 무엇인가 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme.md) [ 2022-07-13 ]   
 * [[ 변수, 상수, 자료형, 연산자, 조건문, 반복문 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme2.md) [ 2022-07-13 ]   
@@ -43,11 +43,11 @@
 * [[ Node.js와 Npm ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme8.md) [ 2022-07-20 ]  
 * [[ Papago만들어보기 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme9.md) [ 2022-07-21 ]  
     
-### Git  
+#### Git  
   
 * [[ Git이란 무엇인가? ]](https://github.com/12OneTwo12/TIL/blob/main/git/readme.md) [ 2022-07-19 ]  
   
-### Java    
+#### Java    
   
 * [[ Java란 무엇인가? ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme.md#%EC%97%90%EB%94%94%ED%84%B0%EB%9E%80) [ 2022-07-21 ]  
 * [[ 변수, 데이터 타입, 타입 변환과 형 변환, Method란 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme2.md) [ 2022-07-22 ]  
