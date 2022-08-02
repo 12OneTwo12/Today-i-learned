@@ -40,10 +40,10 @@
 ### Java    
   
 * [[ Java란 무엇인가? ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme.md#%EC%97%90%EB%94%94%ED%84%B0%EB%9E%80) [ 2022-07-21 ]  
-* [[ Java 더 자세히 알아보자 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme2.md) [ 2022-07-22 ]  
-* [[ Java 더 자세히 알아보자 2 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme3.md) [ 2022-07-25 ]  
-* [[ Java 더 자세히 알아보자 3 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme4.md) [ 2022-07-26 ]  
-* [[ Java 더 자세히 알아보자 4 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme5.md) [ 2022-07-27 ]  
-* [[ Java 더 자세히 알아보자 5 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme6.md) [ 2022-07-28 ]  
-* [[ Java 더 자세히 알아보자 6 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme7.md) [ 2022-08-01 ]  
-* [[ 객체 지향 언어의 4대 특징과 텍스트를 통한 입력 및 console 기반 자바 프로그램 개선 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme8.md) [ 2022-08-01 ]  
+* [[ 변수, 데이터 타입, 타입 변환과 형 변환, Method란 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme2.md) [ 2022-07-22 ]  
+* [[ 객체 지향 프로그래밍 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme3.md) [ 2022-07-25 ]  
+* [[ 상속, 객체간의 협력이 어떻게 이루어질까? ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme4.md) [ 2022-07-26 ]  
+* [[ 다형성, 참조 변수의 타입 변환 그리고 오버라이딩 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme5.md) [ 2022-07-27 ]  
+* [[ 객체 배열 그리고 텍스트를 통한 입력과 간단한 console 기반 자바 프로그램 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme6.md) [ 2022-07-28 ]  
+* [[ 추상 메서드, 인터페이스, 메모리 구조, 예외 처리 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme7.md) [ 2022-08-01 ]  
+* [[ 객체 지향 언어의 4대 특징과 텍스트 파일을 통한 입력 및 console 기반 자바 프로그램 개선 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme8.md) [ 2022-08-01 ]  
