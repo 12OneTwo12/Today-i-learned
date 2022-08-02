@@ -24,12 +24,12 @@
 ### Javascript  
   
 * [[ Javascript란 무엇인가 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme.md) [ 2022-07-13 ]   
-* [[ Javascript 더 자세히 알아보자 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme2.md) [ 2022-07-13 ]   
-* [[ Javascript 더 자세히 알아보자 2 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme3.md) [ 2022-07-14 ]     
-* [[ Javascript 더 자세히 알아보자 3 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme4.md) [ 2022-07-15 ]   
+* [[ 변수, 상수, 자료형, 연산자, 조건문, 반복문 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme2.md) [ 2022-07-13 ]   
+* [[ 객체와 함수 그리고 배열 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme3.md) [ 2022-07-14 ]     
+* [[ 렌더링과 Node 그리고 Event ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme4.md) [ 2022-07-15 ]   
 * [[ Javascript 버튼을 클릭하여 배경색 바꿔보기 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme5.md) [ 2022-07-15 ]   
 * [[ Javascript 버튼을 클릭하여 카운트 하기 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme6.md) [ 2022-07-18 ]  
-* [[ Javascript 더 자세히 알아보자 4 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme7.md) [ 2022-07-18 ]  
+* [[ 전개 문법, 구조분해할당, 모듈, 동기와 비동기, AJAX, JSON ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme7.md) [ 2022-07-18 ]  
 * [[ Node.js와 Npm ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme8.md) [ 2022-07-20 ]  
 * [[ Papago만들어보기 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme9.md) [ 2022-07-21 ]  
     
