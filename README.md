@@ -6,13 +6,13 @@
     
 ## 목차
   
-  * ### [ Record ](#record)  
-  * ### [ Basic ](#basic)  
-  * ### [ HTML ](#html)  
-  * ### [ CSS ](#css)  
-  * ### [ Javascript ](#javascript)  
-  * ### [ Git ](#git)  
-  * ### [ Java ](#java)  
+  * #### [ Record ](#record)  
+  * #### [ Basic ](#basic)  
+  * #### [ HTML ](#html)  
+  * #### [ CSS ](#css)  
+  * #### [ Javascript ](#javascript)  
+  * #### [ Git ](#git)  
+  * #### [ Java ](#java)  
   
 --------------------------------------------------------------------------------------------------------------------------------------------------    
   
