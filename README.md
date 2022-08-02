@@ -46,4 +46,4 @@
 * [[ Java 더 자세히 알아보자 4 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme5.md) [ 2022-07-27 ]  
 * [[ Java 더 자세히 알아보자 5 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme6.md) [ 2022-07-28 ]  
 * [[ Java 더 자세히 알아보자 6 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme7.md) [ 2022-08-01 ]  
-  
+* [[ 객체 지향 언어의 4대 특징과 텍스트를 통한 입력 및 console 기반 자바 프로그램 개선 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme8.md) [ 2022-08-01 ]  
