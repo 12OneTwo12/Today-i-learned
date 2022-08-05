@@ -59,3 +59,4 @@
 * [[ 객체 지향 언어의 4대 특징과 텍스트 파일을 통한 입력 및 console 기반 자바 프로그램 개선 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme8.md) [ 2022-08-02 ]  
 * [[ 라이브러리와 프레임워크 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme9.md) [ 2022-08-03 ]  
 * [[ MVC패턴을 통해 텍스트 파일을 통한 입출력 프로그램 개선 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme10.md) [ 2022-08-04 ]  
+* [[ 초기화 블록과 싱글톤 패턴 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme11.md) [ 2022-08-05 ]    
