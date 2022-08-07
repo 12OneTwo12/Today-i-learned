@@ -64,4 +64,4 @@
   
 #### SQL  
   
-* [[ SQL이란 무엇인가? ]]
+* [[ SQL이란 무엇인가? ]](https://github.com/12OneTwo12/Today-i-learned/tree/main/SQL) [ 2022-08-07 ]  
