@@ -67,3 +67,4 @@
 * [[ SQL이란 무엇인가? ]](https://github.com/12OneTwo12/Today-i-learned/tree/main/SQL) [ 2022-08-07 ]  
 * [[ SQL DML명령어 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/SQL/readme1.md) [ 2022-08-08 ]  
 * [[ SQL DDL명령어 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/SQL/readme2.md) [ 2022-08-09 ]  
+* [[ 데이터  ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/SQL/readme3.md) [ 2022-08-09 ]  
