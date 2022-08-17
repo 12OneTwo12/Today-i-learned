@@ -11,7 +11,6 @@
   * #### [[ JSP 아키텍처 ]](#jsp-아키텍처)  
   * #### [[ SSR과 CSR ]](#ssr과-csr)  
   * #### [[ Servlet ]](#servlet)  
-  * #### [[ JSP 내장 객체 ]](#jsp-내장-객체)  
     
       
 ---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -140,45 +139,3 @@
       </servlet-mapping>
       ```
   
-* ### JSP 내장 객체   
-
-  개발자가 JSP 파일 내에 객체를 생성하지 않고 바로 사용할 수 있는 객체가 내장 객체이다.  
-  JSP에서 제공되는 내장객체는 JSP 컨테이너에 의해 서블릿으로 변환될 때 자동으로 객체가 생성된다.  
-    
-  * ### JSP 내장 객체 종류  
-
-    |    | 종류        | 클래스                                 |
-    |----|-------------|----------------------------------------|
-    | 1. | request     | javax.servlet.http.HttpServletRequest  |
-    | 2. | response    | javax.servlet.http.HttpServletResponse |
-    | 3. | out         | javax.servlet.jsp.JspWriter            |
-    | 4. | session     | javax.servlet.http.HttpSession         |
-    | 5. | application | javax.servlet.ServletContext           |
-    | 6. | pageContext | javax.servlet.jsp.PageContext          |
-    | 7. | page        | javax.servlet.jsp.HttpJspPage          |
-    | 8. | config      | javax.servlet.ServletConfig            |
-    | 9. | exception   | java.lang.Throwable                    |
-      
-  * ###  request 객체  
-
-    웹 브라우저를 통해 서버에 어떤 정보를 요청하는 것을 request라고 한다.  
-    이러한 요청 정보가 담기고 관리되는 곳이 request객체이다.  
-    request객체는 이러한 요청 정보가 담기고 관리되는 곳이고, 서버와 관련된 정보 읽기 기능,   
-    클라이언트가 전송한 요청 파라미터 읽기 기능, 클라이언트가 전송한 쿠키 읽기 기능 등을 제공하고 있다.  
-      
-      * #### request 객체 관련 주요 메서드  
-
-        | 메서드                   | 기능                                                                            |
-        |--------------------------|---------------------------------------------------------------------------------|
-        | getContextPath()         | String - 웹 어플리케이션의 컨텍스트 루트의 경로를 얻습니다.                     |
-        | getMethod()              | String - 웹 브라우저가 정보를 전송할 때 사용한 요청 방식을 구합니다.(get, post) |
-        | getServerName()          | String - 연결할 때 사용한 서버 이름을 구합니다.                                 |
-        | getServerPort()          | int - 서버가 실행중인 포트 번호를 구합니다.                                     |
-        | getRequestURL()          | String - 요청 URL을 얻습니다.                                                   |
-        | getRequestURI()          | String - 요청 URI를 얻습니다.                                                   |
-        | getRemoteAddr()          | String - 웹 서버에 연결한 클라이언트의 IP주소를 구합니다.                       |
-        | getProtocol()            | String - 해당 프로토콜을 얻습니다                                               |
-        | getParameter(name)       | 이름이 name인 파라미터 값을 구합니다. 존재하지 않을 경우 null을 반환합니다.     |
-        | getParameterValues(name) | 이름이 name인 모든 파라미터 값들을 배열로 구합니다.                             |
-          
-       
