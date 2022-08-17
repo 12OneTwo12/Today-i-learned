@@ -12,6 +12,7 @@
    ##### [ Git ](#git)  
    ##### [ Java ](#java)  
    ##### [ SQL ](#sql)   
+   ##### [ Web Application ](#web-application)  
   
 --------------------------------------------------------------------------------------------------------------------------------------------------    
   
@@ -63,7 +64,6 @@
 * [[ 라이브러리와 프레임워크 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme9.md) [ 2022-08-03 ]  
 * [[ MVC패턴을 통해 텍스트 파일을 통한 입출력 프로그램 개선 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme10.md) [ 2022-08-04 ]  
 * [[ 초기화 블록과 싱글톤 패턴 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme11.md) [ 2022-08-05 ]    
-* [[ JSP와 Servlet ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme12.md) [ 2022-08-16 ]  
   
 #### SQL  
   
@@ -72,3 +72,7 @@
 * [[ SQL DDL명령어 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/SQL/readme2.md) [ 2022-08-09 ]  
 * [[ 데이터 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/SQL/readme3.md) [ 2022-08-09 ]  
 * [[ 서브쿼리(Subquery) ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/SQL/readme4.md) [ 2022-08-12 ]  
+
+#### Web Application  
+  
+* [[ JSP와 Servlet ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme12.md) [ 2022-08-16 ]  
