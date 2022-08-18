@@ -77,3 +77,4 @@
   
 * [[ JSP와 Servlet ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme12.md) [ 2022-08-16 ]  
 * [[ JSP 객체, Cookie 및 Session ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme13.md) [ 2022-08-17 ]  
+* [[ JSP Action Tag, forward, Java bean ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme14.md) [ 2022-08-18 ]  
