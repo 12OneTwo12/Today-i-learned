@@ -65,6 +65,7 @@
 * [[ MVC패턴을 통해 텍스트 파일을 통한 입출력 프로그램 개선 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme10.md) [ 2022-08-04 ]  
 * [[ 초기화 블록과 싱글톤 패턴 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme11.md) [ 2022-08-05 ]    
 * [[ 쓰레드, 람다 표현식 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme15.md) [ 2022-08-21 ]  
+* [[ 팩토리 메소드 패턴 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme16.md) [ 2022-08-21 ]  
   
 #### SQL  
   
