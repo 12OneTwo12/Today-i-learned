@@ -24,6 +24,7 @@
   
 * [[ Internet과 Web ]](https://github.com/12OneTwo12/TIL/blob/main/Basic/Internet.md) [ 2022-07-11 ]    
 * [[ HTTP ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Basic/readme2.md) [ 2022-08-16 ]  
+* [[ GET과 POST ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readme3.md) [ 2022-08-24 ]  
 
 #### HTML
 
