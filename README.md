@@ -88,3 +88,4 @@
 * [[ Spring Controller and Service ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring4.md) [ 2022-08-25 ]  
 * [[ JDBC, 커넥션 풀, Spring-JDBC와 MyBatis ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring5.md) [ 2022-08-26 ]  
 * [[ Lombok과 Tiles ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readme4.md) [ 2022-08-29 ]  
+* [[ 이전 페이지, 다음 페이지, 검색 구현 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring6.md) [ 2022-08-31 ]  
