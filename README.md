@@ -67,6 +67,7 @@
 * [[ 초기화 블록과 싱글톤 패턴 ]](https://github.com/12OneTwo12/TIL/blob/main/Java/readme11.md) [ 2022-08-05 ]    
 * [[ 쓰레드, 람다 표현식 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme15.md) [ 2022-08-21 ]  
 * [[ 팩토리 메소드 패턴 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme16.md) [ 2022-08-21 ]  
+* [[ 빌더 패턴(Builder Pattern) ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readmeBuilderPattern.md) [ 2022-09-05 ]  
   
 #### SQL  
   
