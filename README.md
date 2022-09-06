@@ -91,3 +91,4 @@
 * [[ Lombok과 Tiles ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readme4.md) [ 2022-08-29 ]  
 * [[ 이전 페이지, 다음 페이지, 검색 구현 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring6.md) [ 2022-08-31 ]  
 * [[ Spring Boot란 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespringboot.md) [ 2022-09-05 ]  
+* [[ 유효성 검사 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespringboot2.md) [ 2022-09-06 ]  
