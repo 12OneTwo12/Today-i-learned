@@ -453,7 +453,7 @@
   
   ```@Controller```, ```@Service```, ```@Repository```, ```@Component```로 선언된 클래스들은 IOC컨테이너에 자동 생성된다.
     
-* ### thymeleaf템플릿  
+* ### thymeleaf 템플릿  
     
   - 타임리프thymeleaf는 자바 라이브러리이며, 텍스트, HTML, XML, Javascript, CSS 그리고 텍스트를 생성할 수 있는 템플릿 엔진이다.  
 
@@ -510,7 +510,60 @@
     <h3>[[${1 == 1}]]</h3>
     ```
       
-    
+  * #### 타임리프의 include방식  
 
+    | 표현식      | 설명                    | 예시                                               |
+    |-------------|-------------------------|----------------------------------------------------|
+    | th:replace  | 다른 파일을 include한다 | <div th:replace="~{/include/layout01 :: part1}" /> |
+    | th:fragment | 조각내기                | <div th:fragment="part1">...</div>                 |
       
-    
+    ```html
+    <div th:fragment="part1">
+	<h3>레이아웃 1페이지</h3>
+    </div>
+    ```
+      
+    ```html
+    <div th:replace="~{./include/layout01 :: part1}"></div>
+    ```
+      
+    ```html
+    <!-- 템플릿 사용방법 - 함수(매개변수) -->
+    <body th:fragment="body(section)">
+
+	<h3>템플릿의 모형 사용하기</h3>
+
+	<header>
+		헤더에 대한 내용
+	</header>
+
+	<section>
+		<th:block th:replace="${section}"></th:block>
+	</section>
+
+	<aside>
+		사이드 메뉴에 대한 내용
+	</aside>
+
+	<footer>
+		푸터에 대한 내용
+	</footer>
+
+    </body>
+    ```
+      
+    ```html
+    <th:block th:replace="~{./include/layout03 :: body(~{:: #first})}">
+	
+	<div id="first">
+		id의 선택자는 #이다
+	</div>
+	
+    </th:block>
+
+    <th:block th:replace="~{./include/layout03 :: body(~{:: .second})}">
+	<div class="second">
+		클래스의 선택자는 . 이다
+	</div>
+    </th:block>
+    ````
