@@ -25,6 +25,7 @@
 * [[ Internet과 Web ]](https://github.com/12OneTwo12/TIL/blob/main/Basic/Internet.md) [ 2022-07-11 ]    
 * [[ HTTP ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Basic/readme2.md) [ 2022-08-16 ]  
 * [[ GET과 POST ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readme3.md) [ 2022-08-24 ]  
+* [[ OOP의 SOLID, 객체지향 프로그래밍의 5원칙 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/oopreadme.md) [ 2022-09-06 ]  
 
 #### HTML
 
