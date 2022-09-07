@@ -69,6 +69,7 @@
 * [[ 쓰레드, 람다 표현식 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme15.md) [ 2022-08-21 ]  
 * [[ 팩토리 메소드 패턴 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme16.md) [ 2022-08-21 ]  
 * [[ 빌더 패턴(Builder Pattern) ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readmeBuilderPattern.md) [ 2022-09-05 ]  
+* [[ 데이터, 기본타입과 참조타입 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme17.md) [ 2022-09-07 ]  
   
 #### SQL  
   
