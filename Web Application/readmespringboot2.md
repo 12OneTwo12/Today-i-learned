@@ -98,3 +98,14 @@
     return "";
 	}
   ```
+
+  * #### Errors의 메소드  
+
+    | 설명                | 표현식                                      | 클래스명    |
+    |---------------------|---------------------------------------------|-------------|
+    | hasErrors()         | 바인딩된 에러가 있다면 true                 | Errors      |
+    | getFieldErrors()    | 유효성 검사에 실패한 필드 목록확인          | Errors      |
+    | getField()          | 유효성 검사에 실패한 변수명확인             | FiledErrors |
+    | getDefaultMessage() | 유효성 검사에 실패한 변수의 에러메시지 확인 | FiledErrors |
+    | isBindingFailure()  | 유효성 검사에 바인딩이 안된경우 false       | FiledErrors |
+      
