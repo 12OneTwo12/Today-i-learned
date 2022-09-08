@@ -49,6 +49,7 @@
 * [[ 전개 문법, 구조분해할당, 모듈, 동기와 비동기, AJAX, JSON ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme7.md) [ 2022-07-18 ]  
 * [[ Node.js와 Npm ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme8.md) [ 2022-07-20 ]  
 * [[ Papago만들어보기 ]](https://github.com/12OneTwo12/TIL/blob/main/Javascript/readme9.md) [ 2022-07-21 ]  
+* [[ jQuery, AJAX ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Javascript/jqueryreadme.md) [ 2022-09-08 ]  
     
 #### Git  
   
