@@ -219,12 +219,12 @@
   }
   ```
     
-  **JPA쿼리 메서드**
+  **JPA쿼리 메서드**  
   쿼리 메서드란 메서드 이름을 조합해서 SQL문을 만드는 것을 의미하는데 이는,  
   https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation
   사이트를 참조하길 바람.  
     
-  **JPQL의 @Query사용하기**
+  **JPQL의 @Query사용하기**  
   JPQL구문을 사용하는방법 ( SQL과 비슷하나 엔티티를 구문에서 사용)  
     
   - 엔티티명은 곧 클래스명입니다(테이블이 아님)  
