@@ -26,7 +26,8 @@
 * [[ HTTP ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Basic/readme2.md) [ 2022-08-16 ]  
 * [[ GET과 POST ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readme3.md) [ 2022-08-24 ]  
 * [[ OOP의 SOLID, 객체지향 프로그래밍의 5원칙 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/oopreadme.md) [ 2022-09-06 ]  
-* [[ 모노리틱 아키텍처(Monolithic Architecture) vs 마이크로 서비스 아키텍처(Micro Service Architecture) ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readme5.md) [ 2022-09-07 ]  
+* [[ 모노리틱 아키텍처(Monolithic Architecture) vs 마이크로 서비스 아키텍처(Micro Service Architecture) ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readme5.md) [ 2022-09-07 ]   
+* [[ Cloud란 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Basic/couldreadme.md) [ 2022-09-15 ]  
 
 #### HTML
 
