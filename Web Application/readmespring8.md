@@ -243,5 +243,31 @@
 	List<Memo> getListDescParam(@Param("num") Long num);
   ```
   
+  **객체를 파라미터로 넘길경우**  
+    
+  객체를 넘길때는 #{객체명} 구문을 사용할 수 있음  
+    
+  ```java
+  // JPQL insert구문은 제공 x
+  // 업데이트 구문은 @Transactional @Modifying 구문을 반드시 붙힌다.
+  @Transactional
+  @Modifying
+  @Query("update Memo m set m.writer = :a where m.mno = :b")
+  int updateMemo(@Param("a") String a, @Param("b") Long b);
+	
+  @Transactional
+  @Modifying
+  @Query("update Memo m set m.writer = :#{#A.writer}, m.text = :#{#A.text} where m.mno = :#{#A.mno}")
+  int updateMemoTwo(@Param("A") Memo memo);
+  ```
+      
+  **네이티브쿼리 사용**  
+    
+  ```java
+  // 네이티브쿼리(기존sql문 사용)
+  @Query(value = "select * from tbl_memo where mno = ?", nativeQuery = true)
+  Memo getNative(Long mno);
+  ```
+  
   나는 솔직히 Mybatis가 더 편한것 같다는 느낌을 받았다.  
   
