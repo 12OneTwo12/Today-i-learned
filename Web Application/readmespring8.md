@@ -269,5 +269,56 @@
   Memo getNative(Long mno);
   ```
   
-  나는 솔직히 Mybatis가 더 편한것 같다는 느낌을 받았다.  
+  **쿼리DSL 을 이용한 동적쿼리**
+    
+  조건에 따라 SQL문이 변하는(동적쿼리) 를 구현할 때 사용 라이브러리 추가와, 빌드 설정 구문이 필요하다.  
+    
+  1. 변수선언  
+  ```
+  buildscript {
+	ext {
+		queryDslVersion = "5.0.0"
+	}
+  }
+  ```  
+    
+  2. 디펜던시추가  
+  ```
+  implementation "com.querydsl:querydsl-jpa:${queryDslVersion}"
+  implementation "com.querydsl:querydsl-apt:${queryDslVersion}"
+  ```
+    
+  3. 플러그인 추가  
+
+  ```
+  id 'com.ewerk.gradle.plugins.querydsl' version '1.0.10'
+  ```
+    
+  4. 그레이들에서 사용할 추가적인 task추가  
+
+  ```
+  def querydslDir = "$buildDir/generated/querydsl"
+  querydsl {
+    jpa = true
+    querydslSourcesDir = querydslDir
+  }
+  sourceSets {
+    main.java.srcDir querydslDir
+  }
+  configurations {
+    compileOnly {
+      extendsFrom annotationProcessor
+    }
+    querydsl.extendsFrom compileClasspath
+  }
+  compileQuerydsl {
+    options.annotationProcessorPath = configurations.querydsl
+  }
+  ```
+
+  Repository는 QuerydslPredicateExecutor<엔티티>를 반드시 추가상속  
+  Gradle Task에서 build 폴더로 가서 build
+  
+  
+  나는 솔직히 동적쿼리를 제외하곤 Mybatis가 더 편한것 같다는 느낌을 받았다.  
   
