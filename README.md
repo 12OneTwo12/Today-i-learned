@@ -13,7 +13,8 @@
    ##### [ Java ](#java)  
    ##### [ SQL ](#sql)   
    ##### [ Web Application ](#web-application)  
-  
+   ##### [ Python ](#python)  
+      
 --------------------------------------------------------------------------------------------------------------------------------------------------    
   
 #### Record
@@ -100,3 +101,7 @@
 * [[ REST, REST API란 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/restapireadme.md) [ 2022-09-08 ]   
 * [[ Spring에서의 Session과 Intercepter ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring7.md) [ 2022-09-14 ]    
 * [[ JPA란 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring8.md) [ 2022-09-14 ]   
+  
+#### Python  
+  
+* [[ Python이란 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/python/readme1.md) [ 2022-09-22 ]  
