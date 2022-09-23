@@ -105,3 +105,4 @@
 #### Python  
   
 * [[ Python이란 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/python/readme1.md) [ 2022-09-22 ]  
+* [[ 문자열, 리스트 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/python/readme2.md) [ 2022-09-23 ]  
