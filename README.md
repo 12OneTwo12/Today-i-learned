@@ -107,3 +107,4 @@
 * [[ Python이란 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/python/readme1.md) [ 2022-09-22 ]  
 * [[ 문자열, 리스트 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/python/readme2.md) [ 2022-09-23 ]  
 * [[ set, tuple, dictionary ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/python/readme3.md) [ 2022-09-26 ]  
+* [[ Python에서의 함수 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/python/readme4.md) [ 2022-09-27 ]  
