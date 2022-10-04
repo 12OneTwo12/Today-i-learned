@@ -110,3 +110,4 @@
 * [[ Python에서의 함수 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/python/readme4.md) [ 2022-09-27 ]  
 * [[ Python에서의 입출력 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/python/readme5.md) [ 2022-09-27 ]  
 * [[ 클래스와 객체 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/python/readme7.md) [ 2022-09-28 ]   
+* [[ numpy ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/python/readme8.md) [ 2022-10-04 ]  
