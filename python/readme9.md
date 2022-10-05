@@ -673,3 +673,68 @@
   res = getInfo(name)
   printInfo(name, res)
   ```
+
+  **엑셀또한 가능**
+  ```python
+  df = pd.read_excel('a.xlsx', engine='openpyxl', sheet_name='Sheet2')#sheet_name=1 
+  
+  df = pd.read_excel('a.xlsx', engine='openpyxl', index_col='이름')  #index_col=0
+  
+  # 'a.xlsx' 파일 데이터 읽음
+  # !pip install xlsxwriter
+  df = pd.read_excel('a.xlsx', engine='openpyxl')
+
+  # 엑셀파일 writer 생성. 타깃은 'b.xlsx'
+  wr = pd.ExcelWriter('b.xlsx', engine='xlsxwriter')#작성자 객체 생성
+  df.to_excel(wr, index=False) #sheet_name='Sheet3'
+  wr.save()
+  
+  # 두 시트 데이터를 읽어서 결합
+  res = []
+  for i in [0,2]:#0, 2번 쉬트 파일 처리
+      df = pd.read_excel('a.xlsx', engine='openpyxl', sheet_name=i)
+      print(df)
+      res.append(df)#배열에 추가
+
+  res[0].append(res[1]) #DataFrame 병합
+  
+  res = []
+  for i in range(0, 2):
+      df = pd.read_excel('a.xlsx', engine='openpyxl', sheet_name=i)
+      print(df)
+      res.append(df)
+
+  res[0].merge(res[1])  
+  
+  import glob
+  files = glob.glob('./*.xlsx')  #문자 패턴과 일치하는 파일명 읽음
+  res = []
+  print(files)
+  for i in files:
+      df = pd.read_excel(i, engine='openpyxl')
+      print(df)
+      res.append(df)
+  x = res[0].append(res[1])
+  
+  wr = pd.ExcelWriter('c.xlsx', engine='xlsxwriter')
+  x.to_excel(wr, index=False, sheet_name='fileA_and_fileB') #sheet_name='Sheet3'
+  wr.save()
+  glob.glob('c.xlsx')   #파일 생성 확인
+  
+  res = []
+  for i in range(0, 2):
+      df = pd.read_excel('a.xlsx', engine='openpyxl', sheet_name=i)
+      res.append(df)
+
+  x = res[0].merge(res[1])  #국영수 쉬트와 사,지,과 쉬트 병합하여 x에 저장
+  t = x.sum(axis=1)         #각 행의 총합
+  a = x.mean(axis=1)        #각 행의 평균
+  x['total']=t              #총합 결과를 total컬럼으로 추가
+  x['avg']=a                #평균 결과를 avg 컬럼으로 추가
+
+  print(x)
+  wr = pd.ExcelWriter('c.xlsx', engine='xlsxwriter')
+  x.to_excel(wr, index=False, sheet_name='result') #sheet_name='Sheet3'
+  wr.save()
+  ```
+  
