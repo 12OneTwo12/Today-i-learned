@@ -114,3 +114,4 @@
 * [[ pandas ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/python/readme9.md) [ 2022-10-04 ]  
 * [[ matplot ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/python/readme10.md) [ 2022-10-05 ]  
 * [[ 외부 데이터 처리 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/python/readme11.md) [ 2022-10-06 ]  
+* [[ 통계학과 데이터 분석 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/python/readme12.md) [ 2022-10-17 ]  
