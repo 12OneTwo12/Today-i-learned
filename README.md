@@ -74,6 +74,25 @@
 * [[ 팩토리 메소드 패턴 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme16.md) [ 2022-08-21 ]  
 * [[ 빌더 패턴(Builder Pattern) ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readmeBuilderPattern.md) [ 2022-09-05 ]  
 * [[ 데이터, 기본타입과 참조타입 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme17.md) [ 2022-09-07 ]  
+* [[ JPA란 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring8.md) [ 2022-09-14 ]   
+
+#### Spring Framework  
+
+* [[ JSP와 Servlet ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme12.md) [ 2022-08-16 ]  
+* [[ JSP 객체, Cookie 및 Session ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme13.md) [ 2022-08-17 ]  
+* [[ JSP Action Tag, forward, Java bean ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme14.md) [ 2022-08-18 ]  
+* [[ Spring이란 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring.md) [ 2022-08-22 ]  
+* [[ DI-IoC ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring2.md) [ 2022-08-23 ]  
+* [[ Spring Framework MVC ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring3.md) [ 2022-08-24 ]  
+* [[ Spring Controller and Service ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring4.md) [ 2022-08-25 ]  
+* [[ JDBC, 커넥션 풀, Spring-JDBC와 MyBatis ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring5.md) [ 2022-08-26 ]  
+* [[ Lombok과 Tiles ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readme4.md) [ 2022-08-29 ]  
+* [[ 이전 페이지, 다음 페이지, 검색 구현 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring6.md) [ 2022-08-31 ]  
+* [[ Spring Boot란 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespringboot.md) [ 2022-09-05 ]  
+* [[ 유효성 검사 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespringboot2.md) [ 2022-09-06 ]    
+* [[ Spring에서의 Session과 Intercepter ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring7.md) [ 2022-09-14 ]    
+* [[ AOP ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring9.md) [ 2022-11-18 ]  
+* [[ Servlet과 DispatcherServlet ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring10.md) [ 2022-11-18 ]  
   
 #### SQL  
   
@@ -85,22 +104,8 @@
 
 #### Web Application  
   
-* [[ JSP와 Servlet ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme12.md) [ 2022-08-16 ]  
-* [[ JSP 객체, Cookie 및 Session ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme13.md) [ 2022-08-17 ]  
-* [[ JSP Action Tag, forward, Java bean ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme14.md) [ 2022-08-18 ]  
 * [[ MVC ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readme.md) [ 2022-08-19 ]  
-* [[ Spring이란 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring.md) [ 2022-08-22 ]  
-* [[ DI-IoC ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring2.md) [ 2022-08-23 ]  
-* [[ Spring Framework MVC ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring3.md) [ 2022-08-24 ]  
-* [[ Spring Controller and Service ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring4.md) [ 2022-08-25 ]  
-* [[ JDBC, 커넥션 풀, Spring-JDBC와 MyBatis ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring5.md) [ 2022-08-26 ]  
-* [[ Lombok과 Tiles ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readme4.md) [ 2022-08-29 ]  
-* [[ 이전 페이지, 다음 페이지, 검색 구현 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring6.md) [ 2022-08-31 ]  
-* [[ Spring Boot란 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespringboot.md) [ 2022-09-05 ]  
-* [[ 유효성 검사 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespringboot2.md) [ 2022-09-06 ]    
 * [[ REST, REST API란 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/restapireadme.md) [ 2022-09-08 ]   
-* [[ Spring에서의 Session과 Intercepter ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring7.md) [ 2022-09-14 ]    
-* [[ JPA란 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring8.md) [ 2022-09-14 ]   
   
 #### Python  
   
