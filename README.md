@@ -77,6 +77,7 @@
 * [[ 빌더 패턴(Builder Pattern) ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readmeBuilderPattern.md) [ 2022-09-05 ]  
 * [[ 데이터, 기본타입과 참조타입 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme17.md) [ 2022-09-07 ]  
 * [[ JPA란 ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Web%20Application/readmespring8.md) [ 2022-09-14 ]   
+* [[ 가비지 컬렉션(Garbage Collection) ]](https://github.com/12OneTwo12/Today-i-learned/blob/main/Java/readme18.md) [ 2022-11-18 ]   
 
 #### Spring Framework  
 
